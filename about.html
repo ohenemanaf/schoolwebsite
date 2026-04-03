@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about Greenfield Academy's history, mission, vision, and the world-class facilities that shape our community leaders." />
+    <title>About Us | Greenfield Academy</title>
+    <link rel="stylesheet" href="CSS/about.css" />
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Premium Typography: Plus Jakarta Sans (Headings) & Inter (Body) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- ========== HEADER / NAVBAR ========== -->
+    <header class="header" id="header" role="banner">
+      <div class="container header__inner">
+        <a href="#home" class="logo">
+          <div class="logo__icon" aria-hidden="true">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="logo__text">
+            <span class="logo__name">Greenfield Academy</span>
+            <span class="logo__tagline">Est. 1994</span>
+          </div>
+        </a>
+
+        <nav class="nav" id="nav" role="navigation" aria-label="Main Navigation">
+          <ul class="nav__list">
+            <li>
+              <a href="index.html" class="nav__link active" aria-current="page">Home</a>
+            </li>
+            <li><a href="index.html#about" class="nav__link">About</a></li>
+            <li><a href="index.html#programs" class="nav__link">Curriculum</a></li>
+            <li><a href="index.html#admissions" class="nav__link">Admissions</a></li>
+            <li class="nav__item--dropdown">
+              <a href="index.html#events" class="nav__link" aria-haspopup="true" aria-expanded="false"
+                >Discover <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#calendar" class="dropdown-link">School Calendar</a></li>
+                <li><a href="school-fee.html" class="dropdown-link">Tuition & Fees</a></li>
+                <li><a href="#news" class="dropdown-link active">News & Events</a></li>
+                <li><a href="gallery.html" class="dropdown-link">Gallery</a></li>
+                <li><a href="parent-portal.html" class="dropdown-link">Parent Portal</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+          <a href="#admissions" class="btn btn--accent nav__cta">Enroll Now</a>
+        </nav>
+
+        <button
+          type="button"
+          class="hamburger"
+          id="hamburger"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu"
+          aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ========== INNER HERO ========== -->
+      <section class="inner-hero" aria-label="Page Header">
+        <div class="inner-hero__bg"></div>
+        <div class="inner-hero__overlay"></div>
+        <div class="container inner-hero__content">
+          <div class="inner-hero__breadcrumb animate-fade-up"><a href="index.html">Home</a> &nbsp;/&nbsp; About Us</div>
+          <h1 class="inner-hero__title animate-fade-up delay-1">Discover Greenfield</h1>
+          <p class="inner-hero__subtitle animate-fade-up delay-2">
+            Building a community of learners, leaders, and compassionate global citizens since 1994.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== WELCOME MSG ========== -->
+      <section class="section welcome">
+        <div class="container">
+          <div class="welcome__grid">
+            <div class="welcome__image reveal">
+              <img
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80"
+                alt="Headmaster Portrait"
+                class="img-cover" />
+            </div>
+            <div class="welcome__card reveal delay-1">
+              <h3>A Welcome Note</h3>
+              <p>
+                "At Greenfield Academy, we believe that education is more than just academic achievement; it is about
+                building the character and resilience needed to thrive in a rapidly changing world.
+              </p>
+              <p>
+                For over three decades, we have been committed to providing a safe, nurturing environment where every
+                student is known, valued, and challenged to reach their highest potential. Welcome to our family."
+              </p>
+              <div class="welcome__author">
+                <strong>Mr. Emmanuel Asante</strong>
+                <span>Principal & Headmaster</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== PHILOSOPHY ========== -->
+      <section class="section philosophy">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="section__pre">Our Core Identity</p>
+            <h2 class="section__title">Mission, Vision & Values</h2>
+          </div>
+          <!-- JS Inject: Philosophy Cards -->
+          <div class="philosophy__grid" id="philosophy-container"></div>
+        </div>
+      </section>
+
+      <!-- ========== OUR HERITAGE ========== -->
+      <section class="section heritage">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="section__pre">Decades of Excellence</p>
+            <h2 class="section__title">Our Heritage</h2>
+            <p class="section__desc">
+              From humble beginnings to an award-winning institution, trace our journey of educational impact.
+            </p>
+          </div>
+          <!-- JS Inject: Heritage Timeline -->
+          <div class="heritage__timeline" id="heritage-container"></div>
+        </div>
+      </section>
+
+      <!-- ========== FACILITIES (BENTO GRID) ========== -->
+      <section class="section facilities">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="section__pre">Campus Life</p>
+            <h2 class="section__title">World-Class Facilities</h2>
+            <p class="section__desc">
+              A stimulating environment designed to support modern learning and physical well-being.
+            </p>
+          </div>
+          <!-- JS Inject: Facilities Cards -->
+          <div class="fac-grid" id="facilities-container"></div>
+        </div>
+      </section>
+    </main>
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <div class="logo logo--white">
+            <div class="logo__icon" aria-hidden="true">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="logo__text">
+              <span class="logo__name">Greenfield Academy</span>
+              <span class="logo__tagline">Est. 1994</span>
+            </div>
+          </div>
+          <p>
+            Shaping the leaders of tomorrow through quality education, strong values, and a nurturing community
+            environment.
+          </p>
+        </div>
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#programs">Academic Programs</a></li>
+            <li><a href="index.html#admissions">Admissions</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>School Resources</h4>
+          <ul>
+            <li><a href="schoolcalendar.html">School Calendar</a></li>
+            <li><a href="school-fee.html">School Fees</a></li>
+            <li><a href="parent-portal.html">Parent Portal</a></li>
+          </ul>
+        </div>
+        <address class="footer__contact" style="font-style: normal">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> School Road, Community 5, Accra</p>
+          <p><i class="fas fa-phone" aria-hidden="true"></i> +233 24 000 0000</p>
+          <p>
+            <i class="fas fa-envelope" aria-hidden="true"></i>
+            info@greenfield.edu.gh
+          </p>
+        </address>
+      </div>
+      <div class="footer__bottom">
+        <p>
+          &copy; 2026 Greenfield Academy. All Rights Reserved.
+          <button
+            type="button"
+            id="admin-trigger"
+            class="admin-trigger-btn"
+            aria-label="Admin Login"
+            title="Admin Login">
+            <i class="fas fa-lock"></i>
+          </button>
+        </p>
+        <p>Built with ❤️ for our community</p>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <script>
+      /* =============================================
+       GREENFIELD ACADEMY — Lightweight Engine
+       ============================================= */
+
+      class ContentInjector {
+        static init() {
+          this.renderPhilosophy();
+          this.renderHeritage();
+          this.renderFacilities();
+        }
+
+        static renderPhilosophy() {
+          const container = document.getElementById("philosophy-container");
+          if (!container) return;
+          const data = [
+            {
+              icon: "fas fa-rocket",
+              title: "Our Mission",
+              text: "To provide a rigorous, holistic educational experience that empowers every learner to achieve their intellectual and personal peak within a supportive community.",
+              delay: "",
+            },
+            {
+              icon: "fas fa-eye",
+              title: "Our Vision",
+              text: "To be the premier educational institution in the region, recognized for academic excellence, moral grounding, and the holistic development of future leaders.",
+              delay: "delay-1",
+            },
+            {
+              icon: "fas fa-heart",
+              title: "Core Values",
+              text: "We are guided daily by our commitment to <strong>Integrity, Discipline, Excellence, Respect, and Community Service</strong> in all our endeavors.",
+              delay: "delay-2",
+            },
+          ];
+          container.innerHTML = data
+            .map(
+              (item) => `
+            <div class="phil-card reveal ${item.delay}">
+              <div class="phil-card__icon"><i class="${item.icon}"></i></div>
+              <h4>${item.title}</h4>
+              <p>${item.text}</p>
+            </div>
+          `,
+            )
+            .join("");
+        }
+
+        static renderHeritage() {
+          const container = document.getElementById("heritage-container");
+          if (!container) return;
+          const data = [
+            {
+              year: "1994",
+              title: "The Foundation",
+              desc: "Greenfield Academy was established with just 3 classrooms, 8 dedicated teachers, and 80 pioneer students. The goal was simple: accessible, high-quality primary education for the local community.",
+              delay: "",
+            },
+            {
+              year: "2005",
+              title: "Expansion to Junior High",
+              desc: "In response to overwhelming parent demand, we opened our Junior High School block. This year also saw the introduction of our first dedicated computer lab and science facility.",
+              delay: "delay-1",
+            },
+            {
+              year: "2015",
+              title: "Senior High Addition",
+              desc: "Greenfield completed its educational pathway by launching the Senior High School, offering science, business, and arts tracks. We celebrated our first batch of WASSCE graduates with a 100% pass rate in 2018.",
+              delay: "delay-2",
+            },
+            {
+              year: "2023",
+              title: "Award Winning Excellence",
+              desc: 'Recognized nationally as the "Best Community School," we unveiled our new state-of-the-art sports complex and digital resource center, cementing our place as a modern educational leader.',
+              delay: "delay-3",
+            },
+          ];
+          container.innerHTML = data
+            .map(
+              (item) => `
+            <div class="timeline-item reveal ${item.delay}">
+              <div class="timeline-year">${item.year}</div>
+              <div class="timeline-content">
+                <h4>${item.title}</h4>
+                <p>${item.desc}</p>
+              </div>
+            </div>
+          `,
+            )
+            .join("");
+        }
+
+        static renderFacilities() {
+          const container = document.getElementById("facilities-container");
+          if (!container) return;
+          const data = [
+            {
+              img: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80",
+              icon: "fas fa-book-reader",
+              title: "Modern Resource Center",
+              desc: "Our expansive library houses over 15,000 physical volumes and a dedicated e-learning digital suite.",
+              delay: "",
+            },
+            {
+              img: "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80",
+              icon: "fas fa-flask",
+              title: "Science Labs",
+              desc: "Fully equipped biology, chemistry, and physics labs.",
+              delay: "delay-1",
+            },
+            {
+              img: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=800&q=80",
+              icon: "fas fa-laptop-code",
+              title: "Tech Hub",
+              desc: "High-speed internet and modern workstations for coding.",
+              delay: "delay-2",
+            },
+            {
+              img: "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80",
+              icon: "fas fa-running",
+              title: "Athletic Grounds",
+              desc: "A FIFA-standard football pitch, basketball courts, and a multi-purpose indoor sports hall to nurture physical excellence.",
+              delay: "delay-1",
+            },
+          ];
+          container.innerHTML = data
+            .map(
+              (item) => `
+            <div class="fac-card reveal ${item.delay}">
+              <img src="${item.img}" alt="${item.title}">
+              <div class="fac-card__content">
+                <div class="fac-card__icon"><i class="${item.icon}"></i></div>
+                <h4>${item.title}</h4>
+                <p>${item.desc}</p>
+              </div>
+            </div>
+          `,
+            )
+            .join("");
+        }
+      }
+
+      class Navigation {
+        constructor() {
+          this.header = document.getElementById("header");
+          this.navLinks = document.querySelectorAll(".nav__link, .dropdown-link");
+          this.backToTop = document.getElementById("back-to-top");
+          this.hamburger = document.getElementById("hamburger");
+          this.nav = document.getElementById("nav");
+          this.bindEvents();
+        }
+
+        bindEvents() {
+          window.addEventListener("scroll", this.handleScroll.bind(this));
+          if (this.hamburger) {
+            this.hamburger.addEventListener("click", this.toggleMenu.bind(this));
+          }
+          this.navLinks.forEach((link) => {
+            link.addEventListener("click", (e) => this.handleLinkClick(e, link));
+          });
+          if (this.backToTop) {
+            this.backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+          }
+          document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && this.nav && this.nav.classList.contains("open")) {
+              this.closeMenu();
+            }
+          });
+        }
+
+        handleScroll() {
+          if (window.scrollY > 50) this.header.classList.add("scrolled");
+          else this.header.classList.remove("scrolled");
+
+          if (window.scrollY > 400) this.backToTop.classList.add("visible");
+          else this.backToTop.classList.remove("visible");
+        }
+
+        toggleMenu() {
+          const isOpen = this.hamburger.classList.contains("open");
+          this.hamburger.classList.toggle("open");
+          this.nav.classList.toggle("open");
+          this.header.classList.toggle("menu-open");
+          this.hamburger.setAttribute("aria-expanded", String(!isOpen));
+          document.body.style.overflow = this.nav.classList.contains("open") ? "hidden" : "";
+        }
+
+        closeMenu() {
+          if (!this.hamburger) return;
+          this.hamburger.classList.remove("open");
+          this.nav.classList.remove("open");
+          this.header.classList.remove("menu-open");
+          this.hamburger.setAttribute("aria-expanded", "false");
+          document.body.style.overflow = "";
+        }
+
+        handleLinkClick(e, link) {
+          const targetId = link.getAttribute("href");
+
+          // Only prevent default and try to scroll if the link is an anchor on the same page
+          if (targetId.startsWith("#")) {
+            e.preventDefault();
+            this.closeMenu();
+            if (targetId === "#") return;
+            const target = document.querySelector(targetId);
+            if (target) {
+              const offset = 80;
+              const top = target.getBoundingClientRect().top + window.scrollY - offset;
+              window.scrollTo({ top, behavior: "smooth" });
+            }
+          } else {
+            // It's an external link (like index.html#programs), let browser handle it, just close menu
+            this.closeMenu();
+          }
+        }
+      }
+
+      class ScrollAnimation {
+        constructor() {
+          this.elements = document.querySelectorAll(".reveal");
+          this.observer = new IntersectionObserver(this.handleIntersection.bind(this), { threshold: 0.12 });
+          this.init();
+        }
+
+        init() {
+          this.elements.forEach((el) => this.observer.observe(el));
+        }
+
+        handleIntersection(entries, observer) {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }
+      }
+
+      // Initialize
+      document.addEventListener("DOMContentLoaded", () => {
+        ContentInjector.init();
+        new Navigation();
+        new ScrollAnimation();
+      });
+    </script>
+  </body>
+</html>

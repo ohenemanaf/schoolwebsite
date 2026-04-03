@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admissions | Greenfield Academy</title>
+    <link rel="stylesheet" href="CSS/admission.css" />
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- ========== HEADER / NAVBAR ========== -->
+    <header class="header" id="header" role="banner">
+      <div class="container header__inner">
+        <a href="index.html" class="logo">
+          <div class="logo__icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+          <div class="logo__text">
+            <span class="logo__name">Greenfield Academy</span>
+            <span class="logo__tagline">Est. 1994</span>
+          </div>
+        </a>
+
+        <nav class="nav" id="nav" role="navigation">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="index.html#about" class="nav__link">About Us</a></li>
+            <li><a href="index.html#programs" class="nav__link">Curriculum</a></li>
+            <li><a href="admission.html" class="nav__link active" aria-current="page">Admissions</a></li>
+            <li class="nav__item--dropdown">
+              <a href="index.html#events" class="nav__link" aria-haspopup="true" aria-expanded="false"
+                >Discover <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="schoolcalendar.html" class="dropdown-link">School Calendar</a></li>
+                <li><a href="school-fee.html" class="dropdown-link">Tuition & Fees</a></li>
+                <li><a href="news-and-events.html" class="dropdown-link">News & Events</a></li>
+                <li><a href="index.html#gallery" class="dropdown-link">Gallery</a></li>
+                <li><a href="parent-portal.html" class="dropdown-link">Parent Portal</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+          </ul>
+          <a href="admission.html" class="btn btn--accent nav__cta">Enroll Now</a>
+        </nav>
+
+        <button
+          type="button"
+          class="hamburger"
+          id="hamburger"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ========== INNER HERO ========== -->
+      <section class="inner-hero">
+        <div
+          class="inner-hero__bg"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80&quot;);
+            opacity: 0.25;
+          "></div>
+        <div
+          class="inner-hero__overlay"
+          style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.98) 100%)"></div>
+        <div class="container inner-hero__content">
+          <div class="inner-hero__breadcrumb animate-fade-up">
+            <a href="index.html">Home</a> &nbsp;/&nbsp; Admissions
+          </div>
+          <h1 class="inner-hero__title animate-fade-up delay-1">Join the Greenfield Family</h1>
+          <p class="inner-hero__subtitle animate-fade-up delay-2">
+            Take the first step towards a brighter future. Discover our enrollment process and requirements.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== ADMISSIONS PROCESS & FORM ========== -->
+      <section class="section admissions-content">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="section__pre">Simple Enrollment</p>
+            <h2 class="section__title">The Admissions Process</h2>
+            <div class="section__line"></div>
+          </div>
+
+          <div class="admissions__grid">
+            <ol class="admissions__steps reveal">
+              <li class="step">
+                <div class="step__num">01</div>
+                <div class="step__body">
+                  <h4>Submit an Inquiry</h4>
+                  <p>Start by filling out the online application request form on this page.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step__num">02</div>
+                <div class="step__body">
+                  <h4>Provide Documents</h4>
+                  <p>Submit the birth certificate, last school report, and passport photos.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step__num">03</div>
+                <div class="step__body">
+                  <h4>Entrance Assessment</h4>
+                  <p>New students complete a short placement assessment in English and Math.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step__num">04</div>
+                <div class="step__body">
+                  <h4>Interview & Acceptance</h4>
+                  <p>Parent interview with the Head of School. Results within 5 days.</p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="admissions__form-wrap reveal delay-1">
+              <h3>Start Application Request</h3>
+              <p>
+                Secure your child's place today. We're currently accepting applications for the 2026/2027 academic year.
+              </p>
+
+              <!-- NATIVE HTML MAILTO FORM -->
+              <form
+                action="mailto:admissions@greenfield.edu.gh"
+                method="POST"
+                enctype="text/plain"
+                class="simple-enroll-form">
+                <input type="text" name="Student_Name" placeholder="Student Name" required />
+                <div class="form-divider"></div>
+                <input type="email" name="Parent_Email" placeholder="Parent Email" required />
+                <div class="form-divider"></div>
+                <input type="tel" name="Phone_Number" placeholder="Phone Number" required />
+                <div class="form-divider"></div>
+                <select name="Grade_Level" required>
+                  <option value="" disabled selected>Select Level</option>
+                  <option value="Creche/KG">Creche / KG</option>
+                  <option value="Primary (1-6)">Primary (1-6)</option>
+                  <option value="JHS (1-3)">JHS (1-3)</option>
+                </select>
+                <button type="submit" class="btn btn--accent">Submit Request</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== REQUIREMENTS ========== -->
+      <section class="section req-section">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="section__pre">Criteria</p>
+            <h2 class="section__title">What We Look For</h2>
+            <div class="section__line"></div>
+          </div>
+          <div class="req-grid reveal delay-1">
+            <div class="req-card">
+              <div class="req-icon"><i class="fas fa-child"></i></div>
+              <h4>Age Requirements</h4>
+              <p>Nursery students must be at least 2 years old, and Kindergarteners 4 years old by September.</p>
+            </div>
+            <div class="req-card">
+              <div class="req-icon"><i class="fas fa-book-reader"></i></div>
+              <h4>Academic Readiness</h4>
+              <p>We assess basic literacy and numeracy for Primary and JHS to ensure proper placement.</p>
+            </div>
+            <div class="req-card">
+              <div class="req-icon"><i class="fas fa-handshake"></i></div>
+              <h4>Community Values</h4>
+              <p>We welcome families whose values align with our core principles of discipline and excellence.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <div class="logo logo--white">
+            <div class="logo__icon" aria-hidden="true"><i class="fas fa-graduation-cap"></i></div>
+            <div class="logo__text">
+              <span class="logo__name">Greenfield Academy</span>
+              <span class="logo__tagline">Est. 1994</span>
+            </div>
+          </div>
+          <p>
+            Shaping the leaders of tomorrow through quality education, strong values, and a nurturing community
+            environment.
+          </p>
+        </div>
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="curriculum.html">Curriculum</a></li>
+            <li><a href="admission.html">Admissions</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>School Resources</h4>
+          <ul>
+            <li><a href="schoolcalendar.html">School Calendar</a></li>
+            <li><a href="school-fee.html">Tuition & Fees</a></li>
+            <li><a href="news-and-events.html">News & Events</a></li>
+            <li><a href="parent-portal.html">Parent Portal</a></li>
+          </ul>
+        </div>
+        <address class="footer__contact" style="font-style: normal">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> School Road, Community 5, Accra</p>
+          <p><i class="fas fa-phone" aria-hidden="true"></i> +233 24 000 0000</p>
+          <p><i class="fas fa-envelope" aria-hidden="true"></i> info@greenfieldacademy.edu.gh</p>
+        </address>
+      </div>
+      <div class="container">
+        <div class="footer__bottom">
+          <p>&copy; 2026 Greenfield Academy. All Rights Reserved.</p>
+          <p>Built with ❤️ for our community</p>
+        </div>
+      </div>
+    </footer>
+      <!-- Back to top -->
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <script>
+      /* =============================================
+         Navigation & Scroll Animations
+      ============================================= */
+      
+      class Navigation {
+        constructor() {
+          this.header = document.getElementById("header");
+          this.hamburger = document.getElementById("hamburger");
+          this.nav = document.getElementById("nav");
+          this.navLinks = document.querySelectorAll(".nav__link, .dropdown-link, .nav__cta");
+          this.bindEvents();
+        }
+
+        bindEvents() {
+          window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) this.header.classList.add("scrolled");
+            else this.header.classList.remove("scrolled");
+          });
+
+          if (this.hamburger) {
+            this.hamburger.addEventListener("click", () => {
+              const isOpen = this.hamburger.classList.contains("open");
+              this.hamburger.classList.toggle("open");
+              this.nav.classList.toggle("open");
+              this.header.classList.toggle("menu-open");
+              this.hamburger.setAttribute("aria-expanded", String(!isOpen));
+              document.body.style.overflow = this.nav.classList.contains("open") ? "hidden" : "";
+            });
+          }
+
+          // Universal robust link click handler
+          this.navLinks.forEach((link) => {
+            link.addEventListener("click", (e) => {
+              const targetId = link.getAttribute("href");
+              if (!targetId) return;
+
+              // Prevent default jump to top for dropdown toggles
+              if (targetId === "#") {
+                e.preventDefault();
+                return;
+              }
+
+              // Close mobile menu on any link click
+              if (this.nav && this.nav.classList.contains("open")) {
+                this.hamburger.classList.remove("open");
+                this.nav.classList.remove("open");
+                this.header.classList.remove("menu-open");
+                document.body.style.overflow = "";
+              }
+            });
+          });
+        }
+      }
+
+      class ScrollAnimation {
+        constructor() {
+          this.elements = document.querySelectorAll(".reveal");
+          this.observer = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          this.elements.forEach((el) => this.observer.observe(el));
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        new Navigation();
+        new ScrollAnimation();
+      });
+          document.addEventListener("DOMContentLoaded", () => {
+      const backToTopBtn = document.getElementById("back-to-top");
+
+      if (backToTopBtn) {
+        
+        // 1. Listen for scroll events to hide/show the button
+        window.addEventListener("scroll", () => {
+          // If scrolled down more than 400px, show button
+          if (window.scrollY > 400) {
+            backToTopBtn.classList.add("visible");
+          } else {
+            // Otherwise, hide it
+            backToTopBtn.classList.remove("visible");
+          }
+        });
+
+        // 2. Listen for clicks to scroll back to the top
+        backToTopBtn.addEventListener("click", () => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Native smooth scrolling
+          });
+        });
+        
+      }
+    });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stay up to date with the latest news, announcements, and the official school calendar at Greenfield Academy." />
+    <title>News & Calendar | Greenfield Academy</title>
+    <link rel="stylesheet" href="CSS/calendar.css" />
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Roboto:wght@300;400;500;700&family=Fira+Code:wght@500&display=swap"
+      rel="stylesheet" />
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- ========== HEADER / NAVBAR ========== -->
+    <header class="header" id="header" role="banner">
+      <div class="container header__inner">
+        <a href="index.html" class="logo">
+          <div class="logo__icon" aria-hidden="true">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="logo__text">
+            <span class="logo__name">Greenfield Academy</span>
+            <span class="logo__tagline">Est. 1994</span>
+          </div>
+        </a>
+
+        <nav class="nav" id="nav" role="navigation" aria-label="Main Navigation">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="about.html" class="nav__link">About Us</a></li>
+            <li><a href="curriculum.html" class="nav__link">Curriculum</a></li>
+            <li><a href="admission.html" class="nav__link">Admissions</a></li>
+            <li class="nav__item--dropdown">
+              <a href="#" class="nav__link active" aria-haspopup="true" aria-expanded="false"
+                >Discover <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px"></i
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="#calendar" class="dropdown-link">School Calendar</a></li>
+                <li><a href="school-fee.html" class="dropdown-link">Tuition & Fees</a></li>
+                <li><a href="#news" class="dropdown-link active">News & Events</a></li>
+                <li><a href="gallery.html" class="dropdown-link">Gallery</a></li>
+                <li><a href="parent-portal.html" class="dropdown-link">Parent Portal</a></li>
+              </ul>
+            </li>
+            <li><a href="index.html#contact" class="nav__link">Contact</a></li>
+          </ul>
+          <a href="admission.html" class="btn btn--accent nav__cta">Enroll Now</a>
+        </nav>
+
+        <button
+          type="button"
+          class="hamburger"
+          id="hamburger"
+          aria-expanded="false"
+          aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ========== INNER HERO ========== -->
+      <section class="inner-hero">
+        <div
+          class="inner-hero__bg"
+          style="
+            background-image: url(&quot;https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80&quot;);
+            opacity: 0.25;
+          "></div>
+        <div
+          class="inner-hero__overlay"
+          style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.98) 100%)"></div>
+        <div class="container inner-hero__content">
+          <div class="inner-hero__breadcrumb animate-fade-up"><a href="index.html">Home</a> &nbsp;/&nbsp; Discover</div>
+          <h1 class="inner-hero__title animate-fade-up delay-1">News & Calendar</h1>
+          <p class="inner-hero__subtitle animate-fade-up delay-2">
+            Stay up to date with the latest achievements, announcements, and the official academic schedule.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== COUNTDOWN BANNER ========== -->
+      <div class="container">
+        <div class="countdown-banner reveal" aria-label="Countdown to Speech and Prize Giving Day">
+          <h4>Next Major Event: <span>Speech & Prize Giving</span></h4>
+          <div class="countdown" id="countdown">
+            <div class="cd-unit"><span id="cd-days">00</span><small>Days</small></div>
+            <div class="cd-unit"><span id="cd-hours">00</span><small>Hours</small></div>
+            <div class="cd-unit"><span id="cd-mins">00</span><small>Mins</small></div>
+            <div class="cd-unit"><span id="cd-secs">00</span><small>Secs</small></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ========== LATEST NEWS (GRID) ========== -->
+      <section class="section" id="news" style="padding-top: 0">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="section__pre">Campus Updates</p>
+            <h2 class="section__title">Latest News</h2>
+            <div class="section__line"></div>
+          </div>
+
+          <div class="news-grid" id="news-archive-grid">
+            <!-- JS Injected News Cards -->
+          </div>
+
+          <!-- Pagination -->
+          <div class="pagination reveal delay-2">
+            <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SCHOOL CALENDAR ========== -->
+      <section class="section bg-light" id="calendar">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="section__pre">Academic Schedule</p>
+            <h2 class="section__title">School Calendar</h2>
+            <div class="section__line"></div>
+            <p class="section__desc">Key dates and upcoming events for the 2025/2026 Academic Year.</p>
+          </div>
+
+          <div class="calendar-controls reveal delay-1">
+            <div class="calendar-tabs" role="tablist">
+              <button type="button" class="tab-btn active" role="tab" data-term="term1">Term 1</button>
+              <button type="button" class="tab-btn" role="tab" data-term="term2">Term 2</button>
+              <button type="button" class="tab-btn" role="tab" data-term="term3">Term 3</button>
+            </div>
+          </div>
+
+          <!-- Term 1 Container -->
+          <div class="calendar-list reveal delay-2" id="calendar-term1" role="tabpanel">
+            <!-- JS Injected Term 1 Events -->
+          </div>
+
+          <!-- Term 2 Container -->
+          <div class="calendar-list hidden" id="calendar-term2" role="tabpanel">
+            <!-- JS Injected Term 2 Events -->
+          </div>
+
+          <!-- Term 3 Container -->
+          <div class="calendar-list hidden" id="calendar-term3" role="tabpanel">
+            <!-- JS Injected Term 3 Events -->
+          </div>
+
+          <div class="download-card reveal delay-3">
+            <h3>Need a Printable Version?</h3>
+            <p>
+              Download the full academic calendar for the 2025/2026 year to keep track of all important dates offline.
+            </p>
+            <button class="btn btn--accent"><i class="fas fa-file-download"></i> Download PDF Calendar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer" role="contentinfo">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <div class="logo logo--white">
+            <div class="logo__icon" aria-hidden="true">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="logo__text">
+              <span class="logo__name">Greenfield Academy</span>
+              <span class="logo__tagline">Est. 1994</span>
+            </div>
+          </div>
+          <p>
+            Shaping the leaders of tomorrow through quality education, strong values, and a nurturing community
+            environment.
+          </p>
+        </div>
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="curriculum.html">Curriculum</a></li>
+            <li><a href="admission.html">Admissions</a></li>
+          </ul>
+        </div>
+        <div class="footer__links">
+          <h4>School Resources</h4>
+          <ul>
+            <li><a href="#calendar">School Calendar</a></li>
+            <li><a href="school-fee.html">Tuition & Fees</a></li>
+            <li><a href="#news">News & Events</a></li>
+            <li><a href="parent-portal.html">Parent Portal</a></li>
+          </ul>
+        </div>
+        <address class="footer__contact" style="font-style: normal">
+          <h4>Contact Info</h4>
+          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> School Road, Community 5, Accra</p>
+          <p><i class="fas fa-phone" aria-hidden="true"></i> +233 24 000 0000</p>
+          <p><i class="fas fa-envelope" aria-hidden="true"></i> info@greenfield.edu.gh</p>
+        </address>
+      </div>
+      <div class="container">
+        <div class="footer__bottom">
+          <p>&copy; 2026 Greenfield Academy. All Rights Reserved.</p>
+          <p>Built with ❤️ for our community</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <script>
+      /* =============================================
+       GREENFIELD ACADEMY — OBJECT-ORIENTED ENGINE
+       ============================================= */
+
+      class NewsCalendarController {
+        static init() {
+          this.renderNewsGrid();
+          this.renderCalendar();
+          this.initCountdown("2026-07-25T09:00:00");
+          this.bindTabs();
+        }
+
+        static renderNewsGrid() {
+          const container = document.getElementById("news-archive-grid");
+          if (!container) return;
+
+          const newsArchive = [
+            {
+              cat: "Achievement",
+              badge: "Featured",
+              date: "March 15, 2026",
+              title: "92% of BECE Candidates Score Aggregate 6–15",
+              desc: "We are immensely proud to announce that our Junior High School graduating class of 2025 has achieved an unprecedented 98% pass rate.",
+              img: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=600&q=80",
+              delay: "",
+            },
+            {
+              cat: "Events",
+              date: "April 5, 2026",
+              title: "Annual Science & Innovation Fair Registration Open",
+              desc: "Students from Primary to JHS are invited to showcase their science projects. The theme this year is Technology for Community Development.",
+              img: "https://images.unsplash.com/photo-1564069114553-7215e1ff1890?auto=format&fit=crop&w=600&q=80",
+              delay: "delay-1",
+            },
+            {
+              cat: "Sports",
+              date: "April 26, 2026",
+              title: "Greenfield Qualifies for Regional Athletics Championship",
+              desc: "Our athletic teams have qualified for the regional inter-school championships after a stellar performance at the zonals.",
+              img: "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=600&q=80",
+              delay: "delay-2",
+            },
+            {
+              cat: "Campus Life",
+              date: "May 2, 2026",
+              title: "New ICT Laboratory Equipment Installed",
+              desc: "Thanks to the generous support of our PTA, the main ICT lab has been upgraded with 40 new desktop computers.",
+              img: "https://images.unsplash.com/photo-1571260899304-42507011ec6a?auto=format&fit=crop&w=600&q=80",
+              delay: "",
+            },
+            {
+              cat: "Culture",
+              date: "May 14, 2026",
+              title: "School Choir Invited to National Arts Festival",
+              desc: "The Greenfield Voices have been officially invited to perform at the National Theatre during the upcoming Arts & Culture Festival.",
+              img: "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=600&q=80",
+              delay: "delay-1",
+            },
+            {
+              cat: "Academic",
+              date: "June 1, 2026",
+              title: "Admissions Open for 2026/2027 Academic Year",
+              desc: "We are now accepting applications for Creche, Primary, and JHS for the upcoming academic year. Secure your child's spot early.",
+              img: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80",
+              delay: "delay-2",
+            },
+          ];
+
+          container.innerHTML = newsArchive
+            .map(
+              (news) => `
+            <article class="news-card reveal ${news.delay}">
+              <div class="news-card__img-wrap">
+                ${news.badge ? `<span class="news-card__badge">${news.badge}</span>` : ""}
+                <img src="${news.img}" alt="${news.title}" class="img-cover" loading="lazy">
+              </div>
+              <div class="news-card__body">
+                <div class="news-card__meta">
+                  <span style="color:var(--primary); text-transform:uppercase;">${news.cat}</span>
+                  <span><i class="far fa-calendar"></i> ${news.date}</span>
+                </div>
+                <h4 class="news-card__title">${news.title}</h4>
+                <p class="news-card__desc">${news.desc}</p>
+                <a href="#" class="read-more-link">Read Full Story <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </article>
+          `,
+            )
+            .join("");
+        }
+
+        static renderCalendar() {
+          // Term 1 Data
+          const term1Events = [
+            {
+              month: "Sep",
+              day: "08",
+              dow: "Monday",
+              title: "School Re-opens for Term 1",
+              desc: "All students are expected to report to school by 7:30am. Assembly starts at 8:00am.",
+              type: "highlight",
+              location: "Main Campus",
+              time: "7:30 AM",
+            },
+            {
+              month: "Oct",
+              day: "15",
+              dow: "Wednesday",
+              title: "PTA General Meeting",
+              desc: "First meeting of the academic year. Important policies and student welfare to be discussed.",
+              type: "normal",
+              location: "School Assembly Hall",
+              time: "10:00 AM",
+            },
+            {
+              month: "Nov",
+              day: "05",
+              dow: "Thursday",
+              title: "Mid-Term Assessments",
+              desc: "Mid-term examinations commence for all primary and JHS students.",
+              type: "normal",
+              location: "All Classrooms",
+              time: "8:00 AM",
+            },
+            {
+              month: "Dec",
+              day: "18",
+              dow: "Friday",
+              title: "End of Term 1 / Carols Service",
+              desc: "School closes for the Christmas break. The day ends with our annual Carols Service.",
+              type: "holiday",
+              location: "School Assembly Hall",
+              time: "1:00 PM",
+            },
+          ];
+          document.getElementById("calendar-term1").innerHTML = this.generateEventRows(term1Events);
+
+          // Term 2 Data
+          const term2Events = [
+            {
+              month: "Jan",
+              day: "13",
+              dow: "Tuesday",
+              title: "School Re-opens for Term 2",
+              desc: "Commencement of the second academic term.",
+              type: "highlight",
+              location: "Main Campus",
+              time: "7:30 AM",
+            },
+            {
+              month: "Feb",
+              day: "20",
+              dow: "Friday",
+              title: "Inter-House Sports Festival",
+              desc: "Annual sports competition. Parents are invited to support the houses.",
+              type: "normal",
+              location: "Sports Grounds",
+              time: "9:00 AM",
+            },
+            {
+              month: "Mar",
+              day: "06",
+              dow: "Friday",
+              title: "Independence Day",
+              desc: "National Holiday. No school activities.",
+              type: "holiday",
+              location: "N/A",
+              time: "All Day",
+            },
+          ];
+          document.getElementById("calendar-term2").innerHTML = this.generateEventRows(term2Events);
+
+          // Term 3 Data
+          const term3Events = [
+            {
+              month: "May",
+              day: "05",
+              dow: "Tuesday",
+              title: "School Re-opens for Term 3",
+              desc: "Final term of the academic year begins.",
+              type: "highlight",
+              location: "Main Campus",
+              time: "7:30 AM",
+            },
+            {
+              month: "Jul",
+              day: "25",
+              dow: "Saturday",
+              title: "Speech & Prize Giving Day",
+              desc: "End of year celebration honoring outstanding students.",
+              type: "normal",
+              location: "Main Campus",
+              time: "9:00 AM",
+            },
+          ];
+          document.getElementById("calendar-term3").innerHTML = this.generateEventRows(term3Events);
+        }
+
+        static generateEventRows(events) {
+          return events
+            .map(
+              (ev, index) => `
+            <div class="event-row ${ev.type} reveal delay-${index % 3}">
+              <div class="event-date-box">
+                <span class="event-month">${ev.month}</span>
+                <span class="event-day">${ev.day}</span>
+                <span class="event-dow">${ev.dow}</span>
+              </div>
+              <div class="event-details">
+                <h4 class="event-title">${ev.title}</h4>
+                <p class="event-desc">${ev.desc}</p>
+                <div class="event-meta">
+                  <span><i class="far fa-clock"></i> ${ev.time}</span>
+                  <span><i class="fas fa-map-marker-alt"></i> ${ev.location}</span>
+                </div>
+              </div>
+            </div>
+          `,
+            )
+            .join("");
+        }
+
+        static bindTabs() {
+          const buttons = document.querySelectorAll(".tab-btn");
+          const contents = document.querySelectorAll(".calendar-list");
+
+          buttons.forEach((btn) => {
+            btn.addEventListener("click", () => {
+              // Update buttons
+              buttons.forEach((b) => b.classList.remove("active"));
+              btn.classList.add("active");
+
+              // Update content
+              const target = btn.getAttribute("data-term");
+              contents.forEach((content) => content.classList.add("hidden"));
+              const activeContent = document.getElementById("calendar-" + target);
+
+              if (activeContent) {
+                activeContent.classList.remove("hidden");
+                // Re-trigger animations
+                activeContent.querySelectorAll(".reveal").forEach((el) => {
+                  el.classList.remove("visible");
+                  setTimeout(() => el.classList.add("visible"), 50);
+                });
+              }
+            });
+          });
+        }
+
+        static initCountdown(targetDateString) {
+          const targetDate = new Date(targetDateString);
+          const elements = {
+            days: document.getElementById("cd-days"),
+            hours: document.getElementById("cd-hours"),
+            mins: document.getElementById("cd-mins"),
+            secs: document.getElementById("cd-secs"),
+          };
+
+          if (!elements.days) return;
+
+          const update = () => {
+            const diff = targetDate - new Date();
+            if (diff <= 0) {
+              Object.values(elements).forEach((el) => {
+                if (el) el.textContent = "00";
+              });
+              return;
+            }
+            elements.days.textContent = String(Math.floor(diff / (1000 * 60 * 60 * 24))).padStart(2, "0");
+            elements.hours.textContent = String(Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(
+              2,
+              "0",
+            );
+            elements.mins.textContent = String(Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, "0");
+            elements.secs.textContent = String(Math.floor((diff % (1000 * 60)) / 1000)).padStart(2, "0");
+          };
+
+          update();
+          setInterval(update, 1000);
+        }
+      }
+
+      class Navigation {
+        constructor() {
+          this.header = document.getElementById("header");
+          this.hamburger = document.getElementById("hamburger");
+          this.nav = document.getElementById("nav");
+          this.backToTop = document.getElementById("back-to-top");
+          this.navLinks = document.querySelectorAll(".nav__link, .dropdown-link, .nav__cta");
+          this.bindEvents();
+        }
+
+        bindEvents() {
+          window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) this.header.classList.add("scrolled");
+            else this.header.classList.remove("scrolled");
+            if (this.backToTop) {
+              if (window.scrollY > 400) this.backToTop.classList.add("visible");
+              else this.backToTop.classList.remove("visible");
+            }
+          });
+
+          if (this.hamburger) {
+            this.hamburger.addEventListener("click", () => {
+              const isOpen = this.hamburger.classList.contains("open");
+              this.hamburger.classList.toggle("open");
+              this.nav.classList.toggle("open");
+              this.header.classList.toggle("menu-open");
+              this.hamburger.setAttribute("aria-expanded", String(!isOpen));
+              document.body.style.overflow = this.nav.classList.contains("open") ? "hidden" : "";
+            });
+          }
+
+          if (this.backToTop) {
+            this.backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+          }
+
+          // Universal robust link click handler
+          this.navLinks.forEach((link) => {
+            link.addEventListener("click", (e) => {
+              const targetId = link.getAttribute("href");
+
+              if (!targetId) return;
+
+              // Prevent default jump to top for dropdown toggles
+              if (targetId === "#") {
+                e.preventDefault();
+                return;
+              }
+
+              // Close mobile menu on any link click
+              if (this.nav && this.nav.classList.contains("open")) {
+                this.hamburger.classList.remove("open");
+                this.nav.classList.remove("open");
+                this.header.classList.remove("menu-open");
+                document.body.style.overflow = "";
+              }
+
+              // Handle smooth scroll strictly for anchor links on the current page
+              if (targetId.startsWith("#")) {
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                  e.preventDefault();
+                  const headerOffset = 80;
+                  const elementPosition = targetElement.getBoundingClientRect().top;
+                  const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth",
+                  });
+                }
+              }
+              // Normal links (e.g., 'about.html') will naturally navigate here
+            });
+          });
+        }
+      }
+
+      class ScrollAnimation {
+        constructor() {
+          this.elements = document.querySelectorAll(".reveal");
+          this.observer = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.12 },
+          );
+          this.elements.forEach((el) => this.observer.observe(el));
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        NewsCalendarController.init();
+        new Navigation();
+        new ScrollAnimation();
+      });
+    </script>
+  </body>
+</html>
