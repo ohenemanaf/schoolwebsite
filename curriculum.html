@@ -1,543 +1,184 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Explore the comprehensive academic curriculum at Greenfield Academy, from Early Childhood to Junior High School." />
-    <title>Academic Curriculum | Greenfield Academy</title>
-    <link rel="stylesheet" href="CSS/curriculum.css" />
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academics | Greenfield Academy</title>
+<meta name="description" content="What children learn at Greenfield Academy, from Creche to Junior High School.">
+<meta name="theme-color" content="#0e4a37">
+<meta property="og:title" content="Academics | Greenfield Academy">
+<meta property="og:description" content="What children learn at Greenfield Academy, from Creche to Junior High School.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ohenemanaf.github.io/schoolwebsite/assets/photos/hero.webp">
+<link rel="canonical" href="https://ohenemanaf.github.io/schoolwebsite/curriculum.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2040%2040%22%20aria-hidden%3D%22true%22%3E%3Crect%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%2211%22%20fill%3D%22%230e4a37%22%2F%3E%3Cpath%20d%3D%22M8%2017.5%2020%2012l12%205.5-12%205.5L8%2017.5Z%22%20fill%3D%22%23f2b33d%22%2F%3E%3Cpath%20d%3D%22M13%2020.2v5.3c0%201.6%203.1%203.3%207%203.3s7-1.7%207-3.3v-5.3l-7%203.2-7-3.2Z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M31%2018v6.5%22%20stroke%3D%22%23f2b33d%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preload" href="assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>:root { --brand: #0e4a37; --accent: #f2b33d; }</style>
+<script>document.documentElement.classList.add('js')</script>
 
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<p class="demo-note"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#info"/></svg><span>Demo school: the name, people, numbers and dates on this site are samples.</span></p>
+<header class="header" data-header>
+  <div class="wrap header__row">
+    <a class="brand" href="index.html" aria-label="Greenfield Academy, home"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="currentColor"/><path d="M8 17.5 20 12l12 5.5-12 5.5L8 17.5Z" fill="var(--accent)"/><path d="M13 20.2v5.3c0 1.6 3.1 3.3 7 3.3s7-1.7 7-3.3v-5.3l-7 3.2-7-3.2Z" fill="#fff"/><path d="M31 18v6.5" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/></svg><span><strong>Greenfield Academy</strong><small>Est. 1994</small></span></a>
+    <nav class="nav" aria-label="Main"><a href="about.html">About</a><a href="curriculum.html" aria-current="page">Academics</a><a href="admission.html">Admissions</a><a href="school-fee.html">Fees</a><a href="schoolcalendar.html">Calendar</a><a href="gallery.html">Gallery</a><a href="parent-portal.html">Parents</a><a href="contact.html">Contact</a></nav>
+    <a class="btn btn--accent header__cta" href="admission.html#apply">Apply now</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menu">
+    <a href="index.html">Home</a>
+    <a href="about.html" style="--i:1">About</a>
+    <a href="curriculum.html" style="--i:2" aria-current="page">Academics</a>
+    <a href="admission.html" style="--i:3">Admissions</a>
+    <a href="school-fee.html" style="--i:4">Fees</a>
+    <a href="schoolcalendar.html" style="--i:5">Calendar</a>
+    <a href="gallery.html" style="--i:6">Gallery</a>
+    <a href="parent-portal.html" style="--i:7">Parents</a>
+    <a href="contact.html" style="--i:8">Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--accent btn--wide" href="admission.html#apply"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#send"/></svg><span>Apply now</span></a>
+    <a class="btn btn--glass btn--wide" href="tel:0300000000"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg><span>030 000 0000</span></a>
+  </div>
+</div>
 
-    <!-- Premium Typography: Plus Jakarta Sans (Headings) & Inter (Body) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
-      rel="stylesheet" />
+<main id="main">
 
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  </head>
-  <body>
-    <!-- ========== HEADER / NAVBAR ========== -->
-    <header class="header" id="header" role="banner">
-      <div class="container header__inner">
-        <a href="index.html" class="logo">
-          <div class="logo__icon" aria-hidden="true">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <div class="logo__text">
-            <span class="logo__name">Greenfield Academy</span>
-            <span
-              class="logo__tagline"
-              style="
-                display: block;
-                font-size: 0.75rem;
-                color: rgba(255, 255, 255, 0.7);
-                font-family: var(--font-body);
-                letter-spacing: 1px;
-                text-transform: uppercase;
-                font-weight: 500;
-              "
-              >Est. 1994</span
-            >
-          </div>
-        </a>
+<section class="page-hero">
+  <div class="wrap page-hero__grid">
+    <div>
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chevron-right"/></svg><span aria-current="page">Academics</span></nav>
+      <h1 data-split>Academics</h1>
+      <p>The national standards-based curriculum, taught with care from Creche to Junior High School.</p>
+    </div>
+    <div class="page-hero__art" aria-hidden="true"><img class="ph ph--a" src="assets/photos/reading-test.webp" alt="" loading="lazy" decoding="async"><img class="ph ph--b" src="assets/photos/library.webp" alt="" loading="lazy" decoding="async"><span class="ph-dot"></span></div>
+  </div>
+  <svg class="page-hero__wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30c240-40 480 40 720 10s480-40 720 0v20H0z"/></svg>
+</section>
 
-        <nav class="nav" id="nav" role="navigation" aria-label="Main Navigation">
-          <ul class="nav__list">
-            <li><a href="index.html" class="nav__link">Home</a></li>
-            <li><a href="index.html#about" class="nav__link">About Us</a></li>
-            <li>
-              <a href="curriculum.html" class="nav__link active" aria-current="page">Curriculum</a>
-            </li>
-            <li class="nav__item--dropdown">
-              <a href="index.html#galleery" class="nav__link" aria-haspopup="true" aria-expanded="false"
-                >Discover <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px"></i
-              ></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="schoolcalendar.html" class="dropdown-link">School Calendar</a>
-                </li>
-                <li>
-                  <a href="school_fees.html" class="dropdown-link">Tuition & Fees</a>
-                </li>
-                <li>
-                  <a href="parentportal.html" class="dropdown-link">Parent Portal</a>
-                </li>
-                <li>
-                  <a href="schoolcalendar.html" class="dropdown-link">News & Events</a>
-                </li>
-                <li>
-                  <a href="gallery.html" class="dropdown-link">Gallery</a>
-                </li>
-                <li>
-                  <a href="gallery.html#staff" class="dropdown-link">Our Staff</a>
-                </li>
-              </ul>
-            </li>
-            <li><a href="index.html#support" class="nav__link">Support</a></li>
-          </ul>
-          <a href="index.html#admissions" class="btn btn--accent nav__cta">Enroll Now</a>
-        </nav>
+<section class="section">
+  <div class="wrap">
+    <div class="head " data-reveal>
+      <p class="kicker">How we teach</p>
+      <h2>Learning with purpose</h2><svg class="rule" viewBox="0 0 120 10" aria-hidden="true" preserveAspectRatio="none"><path d="M2 6c18-5 38-5 58 0s40 4 58-1" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg>
+      <p class="head__text">We follow the national curriculum and focus on understanding and practical skills, not memorising.</p>
+    </div>
+    <div class="approach">
+      <article data-reveal style="--i:0"><span class="approach__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#brain"/></svg></span><h3>Thinking, not memorising</h3><p>Pupils learn to question, test ideas and solve real problems.</p></article>
+      <article data-reveal style="--i:1"><span class="approach__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#monitor"/></svg></span><h3>Digital skills</h3><p>Computing is part of learning from Upper Primary onwards.</p></article>
+      <article data-reveal style="--i:2"><span class="approach__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#users"/></svg></span><h3>Speaking and teamwork</h3><p>Group projects, debates and presentations build confidence.</p></article>
+    </div>
+  </div>
+</section>
 
-        <button
-          type="button"
-          class="hamburger"
-          id="hamburger"
-          aria-expanded="false"
-          aria-label="Toggle navigation menu">
-          <span></span><span></span><span></span>
-        </button>
+<section class="section section--paper" id="levels">
+  <div class="wrap">
+    <div class="head " data-reveal>
+      <p class="kicker">Levels</p>
+      <h2>What your child will learn</h2><svg class="rule" viewBox="0 0 120 10" aria-hidden="true" preserveAspectRatio="none"><path d="M2 6c18-5 38-5 58 0s40 4 58-1" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg>
+      
+    </div>
+    <div class="tabs" role="tablist" aria-label="School levels" data-tabs>
+      <button role="tab" id="tab-creche" aria-controls="creche" aria-selected="true" tabindex="0"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#baby"/></svg><span>Creche and Nursery</span></button><button role="tab" id="tab-kindergarten" aria-controls="kindergarten" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#blocks"/></svg><span>Kindergarten</span></button><button role="tab" id="tab-primary" aria-controls="primary" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#book-open"/></svg><span>Primary School</span></button><button role="tab" id="tab-jhs" aria-controls="jhs" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#graduation-cap"/></svg><span>Junior High School</span></button>
+      <span class="tabs__ink" aria-hidden="true"></span>
+    </div>
+    <section class="panel" role="tabpanel" id="creche" aria-labelledby="tab-creche">
+      <div class="panel__intro">
+        <span class="panel__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#baby"/></svg></span>
+        <div><h3>Creche and Nursery</h3><p class="panel__ages">Ages 1 to 3</p></div>
       </div>
-    </header>
-
-    <main>
-      <!-- ========== INNER HERO ========== -->
-      <section class="inner-hero">
-        <div class="inner-hero__bg"></div>
-        <div class="inner-hero__overlay"></div>
-        <div class="container inner-hero__content">
-          <div class="inner-hero__breadcrumb animate-fade-up">
-            <a href="index.html">Home</a> &nbsp;/&nbsp; Academics
-          </div>
-          <h1 class="inner-hero__title animate-fade-up delay-1">Academic Curriculum</h1>
-          <p class="inner-hero__subtitle animate-fade-up delay-2">
-            A holistic, standards-based educational pathway designed to build critical thinkers, innovators, and
-            leaders.
-          </p>
-        </div>
-      </section>
-
-      <!-- ========== OVERVIEW SECTION (TRANSFORMED) ========== -->
-      <section class="curriculum-overview">
-        <div class="container">
-          <div class="overview-grid">
-            <div class="overview-text reveal">
-              <h2 class="section__pre" style="text-align: left">Our Philosophy</h2>
-              <h3>Learning with Purpose</h3>
-              <p>
-                At Greenfield Academy, we believe education is not merely about memorizing facts, but about fostering a
-                deep, lifelong love for learning. We implement the newly approved national curriculum framework,
-                blending it with international best practices.
-              </p>
-              <p>
-                Our approach shifts the focus from rote learning to
-                <strong>inquiry-based, practical application</strong>. We ensure every learner develops core
-                competencies in critical thinking, digital literacy, and creative problem-solving.
-              </p>
-
-              <div class="feature-list">
-                <div class="feature-item">
-                  <div class="feature-icon"><i class="fas fa-brain"></i></div>
-                  <div class="feature-text">
-                    <strong>Critical Thinking & Problem Solving</strong>
-                    <p>
-                      Encouraging students to analyze, evaluate, and create innovative solutions to real-world
-                      challenges.
-                    </p>
-                  </div>
-                </div>
-                <div class="feature-item">
-                  <div class="feature-icon">
-                    <i class="fas fa-laptop-code"></i>
-                  </div>
-                  <div class="feature-text">
-                    <strong>Digital Literacy from Day One</strong>
-                    <p>
-                      Integrating modern computing skills across all subjects to prepare students for the digital
-                      frontier.
-                    </p>
-                  </div>
-                </div>
-                <div class="feature-item">
-                  <div class="feature-icon"><i class="fas fa-users"></i></div>
-                  <div class="feature-text">
-                    <strong>Collaboration & Communication</strong>
-                    <p>
-                      Fostering dynamic teamwork through group projects, active debates, and confident presentations.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="overview-img-wrapper reveal delay-1">
-              <div class="overview-img">
-                <img
-                  src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&q=80"
-                  alt="Student in a modern library"
-                  class="img-cover" />
-              </div>
-              <!-- Floating Badge -->
-              <div class="overview-badge">
-                <i class="fas fa-award"></i>
-                <div>
-                  <span>Top 5%</span>
-                  <span>National Academic Ranking</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ========== EDUCATIONAL PHASES (Data-Driven via JS) ========== -->
-      <section class="section phases-section">
-        <div class="container">
-          <div class="section__header reveal">
-            <p class="section__pre">The Academic Journey</p>
-            <h2 class="section__title">Our Educational Pathways</h2>
-            <div class="section__line"></div>
-            <p class="section__desc">
-              From their first steps in the classroom to their final national examinations, we provide a structured,
-              supportive progression.
-            </p>
-          </div>
-
-          <!-- JS Inject: Curriculum Phases -->
-          <div class="phases-grid" id="curriculum-container"></div>
-        </div>
-      </section>
-
-      <!-- ========== CALL TO ACTION ========== -->
-      <section class="section bg-light" style="padding-bottom: 2rem">
-        <div class="container" style="text-align: center">
-          <div class="reveal">
-            <h2 style="font-size: 2rem; margin-bottom: 1rem">Ready to Join Our Community?</h2>
-            <p style="color: var(--text-light); margin-bottom: 2rem">
-              Take the first step towards securing your child's future at Greenfield Academy.
-            </p>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap">
-              <a href="index.html#admissions" class="btn btn--primary">Apply for Admission</a>
-              <a href="about.html" class="btn btn--white" style="border: 1px solid var(--gray-light)"
-                >Discover Our Facilities</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ========== FOOTER ========== -->
-    <footer class="footer" role="contentinfo">
-      <div class="container footer__grid">
-        <div class="footer__brand">
-          <div class="logo logo--white">
-            <div class="logo__icon" aria-hidden="true">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="logo__text">
-              <span class="logo__name">Greenfield Academy</span>
-              <span
-                class="logo__tagline"
-                style="
-                  display: block;
-                  font-size: 0.75rem;
-                  color: rgba(255, 255, 255, 0.7);
-                  font-family: var(--font-body);
-                  letter-spacing: 1px;
-                  text-transform: uppercase;
-                  font-weight: 500;
-                "
-                >Est. 1994</span
-              >
-            </div>
-          </div>
-          <p>
-            Shaping the leaders of tomorrow through quality education, strong values, and a nurturing community
-            environment.
-          </p>
-        </div>
-        <div class="footer__links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="curriculum.html">Academic Programs</a></li>
-            <li><a href="index.html#admissions">Admissions</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__links">
-          <h4>School Resources</h4>
-          <ul>
-            <li><a href="schoolcalendar.html">School Calendar</a></li>
-            <li><a href="school_fees.html">School Fees</a></li>
-            <li><a href="parentportal.html">Parent Portal</a></li>
-          </ul>
-        </div>
-        <address class="footer__contact" style="font-style: normal">
-          <h4>Contact Info</h4>
-          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> School Road, Community 5, Accra</p>
-          <p><i class="fas fa-phone" aria-hidden="true"></i> +233 24 000 0000</p>
-          <p>
-            <i class="fas fa-envelope" aria-hidden="true"></i>
-            info@greenfield.edu.gh
-          </p>
-        </address>
+      <p class="panel__text">A calm, safe start focused on health, wellbeing and early development, through play, songs and stories.</p>
+      <h4>Subjects</h4>
+      <ul class="chips"><li style="--i:0">Play and movement</li><li style="--i:1">Songs and rhymes</li><li style="--i:2">Early language</li><li style="--i:3">Social skills</li></ul>
+    </section>
+    <section class="panel" role="tabpanel" id="kindergarten" aria-labelledby="tab-kindergarten" hidden>
+      <div class="panel__intro">
+        <span class="panel__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#blocks"/></svg></span>
+        <div><h3>Kindergarten</h3><p class="panel__ages">KG 1 and KG 2, ages 4 to 5</p></div>
       </div>
-      <div class="container">
-        <div class="footer__bottom">
-          <p>
-            &copy; 2026 Greenfield Academy. All Rights Reserved.
-            <button
-              type="button"
-              class="admin-trigger-btn"
-              aria-label="Admin Login"
-              title="Admin Login"
-              onclick="alert('Admin Dashboard Access Requires Secure Login.')">
-              <i class="fas fa-lock"></i>
-            </button>
-          </p>
-          <p>Built with ❤️ for our community</p>
-        </div>
+      <p class="panel__text">Play-based learning built on the 4Rs: Reading, wRiting, aRithmetic and cReativity.</p>
+      <h4>Subjects</h4>
+      <ul class="chips"><li style="--i:0">Literacy</li><li style="--i:1">Numeracy</li><li style="--i:2">Creative Arts</li><li style="--i:3">Our World, Our People</li></ul>
+    </section>
+    <section class="panel" role="tabpanel" id="primary" aria-labelledby="tab-primary" hidden>
+      <div class="panel__intro">
+        <span class="panel__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#book-open"/></svg></span>
+        <div><h3>Primary School</h3><p class="panel__ages">Basic 1 to Basic 6</p></div>
       </div>
-    </footer>
+      <p class="panel__text">The national standards-based curriculum, with Computing and French from Basic 4 and the National Standard Assessment Test (NSAT) in Basic 2, 4 and 6.</p>
+      <h4>Subjects</h4>
+      <ul class="chips"><li style="--i:0">English</li><li style="--i:1">Mathematics</li><li style="--i:2">Science</li><li style="--i:3">Our World, Our People</li><li style="--i:4">Religious and Moral Education</li><li style="--i:5">History</li><li style="--i:6">Creative Arts</li><li style="--i:7">Physical Education</li><li style="--i:8">Computing (B4+)</li><li style="--i:9">French (B4+)</li></ul>
+    </section>
+    <section class="panel" role="tabpanel" id="jhs" aria-labelledby="tab-jhs" hidden>
+      <div class="panel__intro">
+        <span class="panel__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#graduation-cap"/></svg></span>
+        <div><h3>Junior High School</h3><p class="panel__ages">JHS 1 to JHS 3</p></div>
+      </div>
+      <p class="panel__text">The Common Core Programme, preparing pupils for the BECE and for the academic or technical path they choose in Senior High School.</p>
+      <h4>Subjects</h4>
+      <ul class="chips"><li style="--i:0">English</li><li style="--i:1">Ghanaian Language</li><li style="--i:2">Mathematics</li><li style="--i:3">Science</li><li style="--i:4">Social Studies</li><li style="--i:5">Religious and Moral Education</li><li style="--i:6">Computing</li><li style="--i:7">Career Technology</li><li style="--i:8">Creative Arts and Design</li><li style="--i:9">Physical and Health Education</li></ul>
+    </section>
+  </div>
+</section>
 
-    <!-- Back to top -->
-    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
-      <i class="fas fa-chevron-up" aria-hidden="true"></i>
-    </button>
+<section class="section">
+  <div class="wrap">
+    <div class="head " data-reveal>
+      <p class="kicker">Assessment</p>
+      <h2>How progress is measured</h2><svg class="rule" viewBox="0 0 120 10" aria-hidden="true" preserveAspectRatio="none"><path d="M2 6c18-5 38-5 58 0s40 4 58-1" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg>
+      
+    </div>
+    <div class="approach">
+      <article data-reveal style="--i:0"><span class="approach__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#notebook-pen"/></svg></span><h3>Class work and tests</h3><p>Regular exercises, projects and end-of-term examinations, with a report card every term.</p></article>
+      <article data-reveal style="--i:1"><span class="approach__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#clipboard-list"/></svg></span><h3>NSAT</h3><p>The National Standard Assessment Test in Basic 2, 4 and 6 tracks progress against national standards.</p></article>
+      <article data-reveal style="--i:2"><span class="approach__icon"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#graduation-cap"/></svg></span><h3>BECE</h3><p>JHS 3 pupils sit the Basic Education Certificate Examination for placement into Senior High School.</p></article>
+    </div>
+  </div>
+</section>
 
-    <script>
-      /* =============================================
-       GREENFIELD ACADEMY — Object-Oriented JS Framework
-       ============================================= */
+<section class="cta">
+  <div class="wrap">
+    <div class="cta__box" data-reveal="zoom">
+      <img class="cta__photo" src="assets/photos/walk-to-school.webp" alt="" loading="lazy" decoding="async">
+      <div class="cta__text"><h2>Ready to join us?</h2><p>Start an application and we will arrange a placement assessment if needed.</p></div>
+      <div class="cta__actions">
+        <a class="btn btn--accent btn--lg" href="admission.html#apply"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#send"/></svg><span>Start an application</span></a>
+        <a class="btn btn--glass btn--lg" href="tel:0300000000"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg><span>030 000 0000</span></a>
+      </div>
+    </div>
+  </div>
+</section>
 
-      /**
-       * Model: Represents an Academic Phase
-       */
-      class AcademicPhase {
-        constructor(title, ageGroup, icon, description, subjects, isHighlighted = false) {
-          this.title = title;
-          this.ageGroup = ageGroup;
-          this.icon = icon;
-          this.description = description;
-          this.subjects = subjects; // Array of subject names
-          this.isHighlighted = isHighlighted; // Boolean to apply primary dark styling
-        }
-      }
+</main>
 
-      /**
-       * Controller: Manages Data Injection for Curriculum
-       */
-      class CurriculumController {
-        static init() {
-          this.renderPhases();
-        }
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__about">
+      <a class="brand brand--footer" href="index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="currentColor"/><path d="M8 17.5 20 12l12 5.5-12 5.5L8 17.5Z" fill="var(--accent)"/><path d="M13 20.2v5.3c0 1.6 3.1 3.3 7 3.3s7-1.7 7-3.3v-5.3l-7 3.2-7-3.2Z" fill="#fff"/><path d="M31 18v6.5" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/></svg><span><strong>Greenfield Academy</strong><small>Nurturing Minds, Building Futures</small></span></a>
+      <p>A Creche to Junior High School in Accra where every child is known, challenged and cared for, following the national curriculum from the first day of school to the BECE.</p>
+    </div>
+    <div><h3>School</h3><a href="about.html">About</a><a href="curriculum.html">Academics</a><a href="admission.html">Admissions</a><a href="school-fee.html">Fees</a></div>
+    <div><h3>Families</h3><a href="schoolcalendar.html">Calendar</a><a href="gallery.html">Gallery</a><a href="parent-portal.html">Parents</a><a href="contact.html">Contact</a><a href="assets/calendar.ics" download>Term dates for your phone</a></div>
+    <div><h3>Visit us</h3><p>12 Example Road, Accra</p><p><a href="tel:0300000000">030 000 0000</a></p><p><a href="mailto:office@example.com">office@example.com</a></p><p>Monday to Friday, 7:30 am to 4:00 pm</p></div>
+  </div>
+  <div class="wrap footer__base"><span>© <span data-year>2026</span> Greenfield Academy</span><a href="gallery.html#credits">Photo credits</a></div>
+</footer>
 
-        static renderPhases() {
-          const container = document.getElementById("curriculum-container");
-          if (!container) return;
+<nav class="dock" aria-label="Quick contact">
+  <a href="tel:0300000000"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg><span>Call</span></a>
+  <a href="https://wa.me/233200000000?text=Hello%20Greenfield%20Academy%2C%20" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#message-circle"/></svg><span>WhatsApp</span></a>
+  <a class="dock__main" href="admission.html#apply"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#send"/></svg><span>Apply</span></a>
+</nav>
 
-          // Object Instantiation (Easy to edit/update curriculum here)
-          const phases = [
-            new AcademicPhase(
-              "Early Childhood",
-              "Ages 1 – 5",
-              "fas fa-shapes",
-              "A play-based approach focusing on vital developmental milestones. We emphasize the '4Rs': Reading, wRiting, aRithmetic, and cReativity to build strong foundations.",
-              ["Literacy (Language)", "Numeracy", "Creative Arts", "Our World, Our People"],
-              false,
-            ),
-            new AcademicPhase(
-              "Primary School",
-              "Basic 1 – 6",
-              "fas fa-book-open",
-              "A standards-based framework focusing on practical competencies over rote memorisation. Essential modern skills like Computing and French are introduced from Basic 4.",
-              [
-                "English Language",
-                "Mathematics",
-                "Science",
-                "Our World, Our People",
-                "RME",
-                "History",
-                "Creative Arts",
-                "Computing",
-                "French",
-              ],
-              false,
-            ),
-            new AcademicPhase(
-              "Junior High School",
-              "JHS 1 – 3",
-              "fas fa-microscope",
-              "The Common Core Programme (CCP) prepares students for either academic or career-related pathways, culminating in the BECE national examinations.",
-              [
-                "Mathematics",
-                "English Language",
-                "Ghanaian Language",
-                "Integrated Science",
-                "Social Studies",
-                "RME",
-                "Pre-Technical Skills",
-                "Computing",
-              ],
-              true, // Highlighted card
-            ),
-            new AcademicPhase(
-              "Special & Co-Curricular",
-              "All Ages",
-              "fas fa-running",
-              "We believe in holistic education. These essential, non-examinable subjects and clubs develop physical fitness, teamwork, leadership, and emotional well-being.",
-              [
-                "Physical Education",
-                "Sports Teams",
-                "School Choir",
-                "Debate & Chess",
-                "Agriculture Club",
-                "Robotics Basics",
-              ],
-              false,
-            ),
-          ];
-
-          // Generate HTML
-          container.innerHTML = phases
-            .map((phase, index) => {
-              const cardClass = phase.isHighlighted ? "phase-card highlight" : "phase-card";
-              const delayClass = `delay-${index % 3}`; // Staggered animation
-
-              // Map subjects to pill spans
-              const subjectsHTML = phase.subjects
-                .map((sub) => `<span class="subject-pill"><i class="fas fa-check-circle"></i> ${sub}</span>`)
-                .join("");
-
-              return `
-              <div class="${cardClass} reveal ${delayClass}">
-                <div class="phase-header">
-                  <div class="phase-title-group">
-                    <h3>${phase.title}</h3>
-                    <span class="phase-age">${phase.ageGroup}</span>
-                  </div>
-                  <div class="phase-icon"><i class="${phase.icon}"></i></div>
-                </div>
-                <p class="phase-desc">${phase.description}</p>
-                
-                <div class="subjects-container">
-                  <h5 class="subjects-title">Key Subjects & Focus Areas</h5>
-                  <div class="subjects-list">
-                    ${subjectsHTML}
-                  </div>
-                </div>
-              </div>
-            `;
-            })
-            .join("");
-        }
-      }
-
-      /**
-       * Core Application Logic (Nav & Animations)
-       */
-      class Navigation {
-        constructor() {
-          this.header = document.getElementById("header");
-          this.navLinks = document.querySelectorAll(".nav__link, .dropdown-link");
-          this.backToTop = document.getElementById("back-to-top");
-          this.hamburger = document.getElementById("hamburger");
-          this.nav = document.getElementById("nav");
-          this.bindEvents();
-        }
-
-        bindEvents() {
-          window.addEventListener("scroll", this.handleScroll.bind(this));
-
-          if (this.hamburger) {
-            this.hamburger.addEventListener("click", this.toggleMenu.bind(this));
-          }
-
-          this.navLinks.forEach((link) => {
-            link.addEventListener("click", (e) => this.handleLinkClick(e, link));
-          });
-
-          if (this.backToTop) {
-            this.backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-          }
-
-          document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape" && this.nav && this.nav.classList.contains("open")) {
-              this.closeMenu();
-            }
-          });
-        }
-
-        handleScroll() {
-          if (window.scrollY > 50) this.header.classList.add("scrolled");
-          else this.header.classList.remove("scrolled");
-
-          if (window.scrollY > 400) this.backToTop.classList.add("visible");
-          else this.backToTop.classList.remove("visible");
-        }
-
-        toggleMenu() {
-          const isOpen = this.hamburger.classList.contains("open");
-          this.hamburger.classList.toggle("open");
-          this.nav.classList.toggle("open");
-          this.header.classList.toggle("menu-open");
-          this.hamburger.setAttribute("aria-expanded", String(!isOpen));
-          document.body.style.overflow = this.nav.classList.contains("open") ? "hidden" : "";
-        }
-
-        closeMenu() {
-          if (!this.hamburger) return;
-          this.hamburger.classList.remove("open");
-          this.nav.classList.remove("open");
-          this.header.classList.remove("menu-open");
-          this.hamburger.setAttribute("aria-expanded", "false");
-          document.body.style.overflow = "";
-        }
-
-        handleLinkClick(e, link) {
-          const targetId = link.getAttribute("href");
-
-          if (targetId.startsWith("#")) {
-            e.preventDefault();
-            this.closeMenu();
-            if (targetId === "#") return;
-            const target = document.querySelector(targetId);
-            if (target) {
-              const offset = 80;
-              const top = target.getBoundingClientRect().top + window.scrollY - offset;
-              window.scrollTo({ top, behavior: "smooth" });
-            }
-          } else {
-            this.closeMenu();
-          }
-        }
-      }
-
-      class ScrollAnimation {
-        constructor() {
-          this.elements = document.querySelectorAll(".reveal");
-          this.observer = new IntersectionObserver(
-            (entries, observer) => {
-              entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                  entry.target.classList.add("visible");
-                  observer.unobserve(entry.target);
-                }
-              });
-            },
-            { threshold: 0.12 },
-          );
-          this.init();
-        }
-        init() {
-          this.elements.forEach((el) => this.observer.observe(el));
-        }
-      }
-
-      // Bootstrap
-      document.addEventListener("DOMContentLoaded", () => {
-        CurriculumController.init();
-        new Navigation();
-        new ScrollAnimation();
-      });
-    </script>
-  </body>
+<button class="to-top" type="button" aria-label="Back to top"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up"/></svg></button>
+<script type="application/json" id="school-data">{"name":"Greenfield Academy","whatsapp":"233200000000","email":"office@example.com","currency":"GH₵","terms":[{"name":"Term 1","starts":"2026-09-08","ends":"2026-12-18"},{"name":"Term 2","starts":"2027-01-12","ends":"2027-04-01"},{"name":"Term 3","starts":"2027-04-27","ends":"2027-07-23"}],"events":[{"date":"2026-09-08","title":"School reopens for Term 1"},{"date":"2026-10-14","title":"PTA general meeting"},{"date":"2026-11-05","title":"Mid-term assessments begin"},{"date":"2026-12-04","title":"Science and Innovation Fair"},{"date":"2026-12-18","title":"End of Term 1 and Carols Service"},{"date":"2027-01-12","title":"School reopens for Term 2"},{"date":"2027-02-19","title":"Inter-House Sports Festival"},{"date":"2027-03-06","title":"Independence Day (no school)"},{"date":"2027-03-25","title":"End of term examinations"},{"date":"2027-04-27","title":"School reopens for Term 3"},{"date":"2027-05-21","title":"Cultural Day"},{"date":"2027-07-23","title":"Speech and Prize Giving Day"}],"plans":[{"level":"Early years","perTerm":2500},{"level":"Primary","perTerm":3200},{"level":"Junior High","perTerm":4000}],"discounts":[5,10,15]}</script>
+<script type="module" src="assets/js/site.js"></script>
+</body>
 </html>

@@ -1,531 +1,194 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Parent Portal for Greenfield Academy. Access news, report absences, and communicate with administration." />
-    <title>Parent Portal | Greenfield Academy</title>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parents | Greenfield Academy</title>
+<meta name="description" content="Notices, term dates, absence reporting and feedback for Greenfield Academy parents.">
+<meta name="theme-color" content="#0e4a37">
+<meta property="og:title" content="Parents | Greenfield Academy">
+<meta property="og:description" content="Notices, term dates, absence reporting and feedback for Greenfield Academy parents.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ohenemanaf.github.io/schoolwebsite/assets/photos/hero.webp">
+<link rel="canonical" href="https://ohenemanaf.github.io/schoolwebsite/parent-portal.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2040%2040%22%20aria-hidden%3D%22true%22%3E%3Crect%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%2211%22%20fill%3D%22%230e4a37%22%2F%3E%3Cpath%20d%3D%22M8%2017.5%2020%2012l12%205.5-12%205.5L8%2017.5Z%22%20fill%3D%22%23f2b33d%22%2F%3E%3Cpath%20d%3D%22M13%2020.2v5.3c0%201.6%203.1%203.3%207%203.3s7-1.7%207-3.3v-5.3l-7%203.2-7-3.2Z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M31%2018v6.5%22%20stroke%3D%22%23f2b33d%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preload" href="assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>:root { --brand: #0e4a37; --accent: #f2b33d; }</style>
+<script>document.documentElement.classList.add('js')</script>
 
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<p class="demo-note"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#info"/></svg><span>Demo school: the name, people, numbers and dates on this site are samples.</span></p>
+<header class="header" data-header>
+  <div class="wrap header__row">
+    <a class="brand" href="index.html" aria-label="Greenfield Academy, home"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="currentColor"/><path d="M8 17.5 20 12l12 5.5-12 5.5L8 17.5Z" fill="var(--accent)"/><path d="M13 20.2v5.3c0 1.6 3.1 3.3 7 3.3s7-1.7 7-3.3v-5.3l-7 3.2-7-3.2Z" fill="#fff"/><path d="M31 18v6.5" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/></svg><span><strong>Greenfield Academy</strong><small>Est. 1994</small></span></a>
+    <nav class="nav" aria-label="Main"><a href="about.html">About</a><a href="curriculum.html">Academics</a><a href="admission.html">Admissions</a><a href="school-fee.html">Fees</a><a href="schoolcalendar.html">Calendar</a><a href="gallery.html">Gallery</a><a href="parent-portal.html" aria-current="page">Parents</a><a href="contact.html">Contact</a></nav>
+    <a class="btn btn--accent header__cta" href="admission.html#apply">Apply now</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menu">
+    <a href="index.html">Home</a>
+    <a href="about.html" style="--i:1">About</a>
+    <a href="curriculum.html" style="--i:2">Academics</a>
+    <a href="admission.html" style="--i:3">Admissions</a>
+    <a href="school-fee.html" style="--i:4">Fees</a>
+    <a href="schoolcalendar.html" style="--i:5">Calendar</a>
+    <a href="gallery.html" style="--i:6">Gallery</a>
+    <a href="parent-portal.html" style="--i:7" aria-current="page">Parents</a>
+    <a href="contact.html" style="--i:8">Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--accent btn--wide" href="admission.html#apply"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#send"/></svg><span>Apply now</span></a>
+    <a class="btn btn--glass btn--wide" href="tel:0300000000"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg><span>030 000 0000</span></a>
+  </div>
+</div>
 
-    <!-- Premium Typography: Plus Jakarta Sans (Headings) & Inter (Body) -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
-      rel="stylesheet" />
+<main id="main">
 
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-    <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="CSS/parent.css" />
-  </head>
-  <body>
-    <!-- ========== HEADER / NAVBAR ========== -->
-    <header class="header" id="header" role="banner">
-      <div class="container header__inner">
-        <a href="index.html" class="logo">
-          <div class="logo__icon" aria-hidden="true">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <div class="logo__text">
-            <span class="logo__name">Greenfield Academy</span>
-            <span class="logo__tagline">Est. 1994</span>
-          </div>
-        </a>
+<section class="page-hero">
+  <div class="wrap page-hero__grid">
+    <div>
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chevron-right"/></svg><span aria-current="page">Parents</span></nav>
+      <h1 data-split>For parents</h1>
+      <p>Notices, term dates and a direct line to the school office.</p>
+    </div>
+    <div class="page-hero__art" aria-hidden="true"><img class="ph ph--a" src="assets/photos/walk-to-school.webp" alt="" loading="lazy" decoding="async"><span class="ph-dot"></span></div>
+  </div>
+  <svg class="page-hero__wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30c240-40 480 40 720 10s480-40 720 0v20H0z"/></svg>
+</section>
 
-        <nav class="nav" id="nav" role="navigation" aria-label="Main Navigation">
-          <ul class="nav__list">
-            <li>
-              <a href="index.html" class="nav__link active" aria-current="page">Home</a>
-            </li>
-            <li><a href="about.html" class="nav__link">About</a></li>
-            <li><a href="index.html#programs" class="nav__link">Curriculum</a></li>
-            <li><a href="index.html#admissions" class="nav__link">Admissions</a></li>
-            <li class="nav__item--dropdown">
-              <a href="#events" class="nav__link" aria-haspopup="true" aria-expanded="false"
-                >Discover <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px"></i
-              ></a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="schoolcalendar.html" class="dropdown-link">School Calendar</a>
-                </li>
-                <li><a href="school_fees.html" class="dropdown-link">Tuition & Fees</a></li>
-                <li>
-                  <a href="index.html#events" class="dropdown-link">News & Events</a>
-                </li>
-                <li><a href="index.html#gallery" class="dropdown-link">Gallery</a></li>
-                <li><a href="index.html#staff" class="dropdown-link">Staff</a></li>
-                <li><a href="index.html#support" class="dropdown-link">Support</a></li>
-              </ul>
-            </li>
-            <li><a href="index.html#contact" class="nav__link">Contact</a></li>
-          </ul>
-          <a href="index.html#admissions" class="btn btn--accent nav__cta">Enroll Now</a>
-        </nav>
+<section class="section">
+  <div class="wrap">
+    <div class="quick">
+      <a href="assets/calendar.ics" download data-reveal style="--i:0"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calendar-plus"/></svg><strong>Term dates</strong><span>Add to your phone</span></a>
+      <a href="school-fee.html#calculator" data-reveal style="--i:1"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#calculator"/></svg><strong>Fees</strong><span>Work out your fees</span></a>
+      <a href="#absence" data-reveal style="--i:2"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#clipboard-list"/></svg><strong>Report an absence</strong><span>Tell the office</span></a>
+      <a href="#feedback" data-reveal style="--i:3"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#message-circle"/></svg><strong>Feedback</strong><span>Share a concern or idea</span></a>
+    </div>
+  </div>
+</section>
 
-        <button
-          type="button"
-          class="hamburger"
-          id="hamburger"
-          aria-expanded="false"
-          aria-label="Toggle navigation menu"
-          aria-controls="nav">
-          <span></span><span></span><span></span>
-        </button>
+<section class="section section--paper">
+  <div class="wrap split split--top">
+    <div data-reveal="left">
+      <p class="kicker">Notice board</p>
+      <h2>Latest notices</h2><svg class="rule" viewBox="0 0 120 10" aria-hidden="true" preserveAspectRatio="none"><path d="M2 6c18-5 38-5 58 0s40 4 58-1" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg>
+      <ul class="notices"><li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#bell"/></svg><span>Admissions are open for the 2027/2028 academic year</span></li><li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#bell"/></svg><span>Term 1 ends with the Carols Service on Friday 18 December</span></li><li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#bell"/></svg><span>Congratulations to our BECE candidates: 92% passed</span></li><li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#bell"/></svg><span>Inter-House Sports Festival on Friday 19 February</span></li><li><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#bell"/></svg><span>New uniforms are available at the school office</span></li></ul>
+    </div>
+    <div data-reveal="right">
+      <p class="kicker">Coming up</p>
+      <h2>Next dates</h2><svg class="rule" viewBox="0 0 120 10" aria-hidden="true" preserveAspectRatio="none"><path d="M2 6c18-5 38-5 58 0s40 4 58-1" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg>
+      <ul class="events" data-upcoming="4"><li class="event event--term" data-date="2026-09-08">
+        <span class="event__date"><b>8</b>Sept</span>
+        <span class="event__body"><strong>School reopens for Term 1</strong><small>Tuesday, 7:30 am, Main campus</small></span>
+        <span class="event__when" data-when></span>
+      </li><li class="event event--event" data-date="2026-10-14">
+        <span class="event__date"><b>14</b>Oct</span>
+        <span class="event__body"><strong>PTA general meeting</strong><small>Wednesday, 10:00 am, Assembly hall</small></span>
+        <span class="event__when" data-when></span>
+      </li><li class="event event--event" data-date="2026-11-05">
+        <span class="event__date"><b>5</b>Nov</span>
+        <span class="event__body"><strong>Mid-term assessments begin</strong><small>Thursday, All classes</small></span>
+        <span class="event__when" data-when></span>
+      </li><li class="event event--event" data-date="2026-12-04">
+        <span class="event__date"><b>4</b>Dec</span>
+        <span class="event__body"><strong>Science and Innovation Fair</strong><small>Friday, 9:00 am, Assembly hall</small></span>
+        <span class="event__when" data-when></span>
+      </li><li class="event event--term" data-date="2026-12-18">
+        <span class="event__date"><b>18</b>Dec</span>
+        <span class="event__body"><strong>End of Term 1 and Carols Service</strong><small>Friday, 1:00 pm, Assembly hall</small></span>
+        <span class="event__when" data-when></span>
+      </li><li class="event event--term" data-date="2027-01-12">
+        <span class="event__date"><b>12</b>Jan</span>
+        <span class="event__body"><strong>School reopens for Term 2</strong><small>Tuesday, 7:30 am, Main campus</small></span>
+        <span class="event__when" data-when></span>
+      </li><li class="event event--event" data-date="2027-02-19">
+        <span class="event__date"><b>19</b>Feb</span>
+        <span class="event__body"><strong>Inter-House Sports Festival</strong><small>Friday, 9:00 am, Sports grounds</small></span>
+        <span class="event__when" data-when></span>
+      </li><li class="event event--holiday" data-date="2027-03-06">
+        <span class="event__date"><b>6</b>Mar</span>
+        <span class="event__body"><strong>Independence Day (no school)</strong><small>Saturday</small></span>
+        <span class="event__when" data-when></span>
+      </li><li class="event event--event" data-date="2027-03-25">
+        <span class="event__date"><b>25</b>Mar</span>
+        <span class="event__body"><strong>End of term examinations</strong><small>Thursday, 8:00 am, All classes</small></span>
+        <span class="event__when" data-when></span>
+      </li><li class="event event--term" data-date="2027-04-27">
+        <span class="event__date"><b>27</b>Apr</span>
+        <span class="event__body"><strong>School reopens for Term 3</strong><small>Tuesday, 7:30 am, Main campus</small></span>
+        <span class="event__when" data-when></span>
+      </li><li class="event event--event" data-date="2027-05-21">
+        <span class="event__date"><b>21</b>May</span>
+        <span class="event__body"><strong>Cultural Day</strong><small>Friday, 9:00 am, Main campus</small></span>
+        <span class="event__when" data-when></span>
+      </li><li class="event event--term" data-date="2027-07-23">
+        <span class="event__date"><b>23</b>Jul</span>
+        <span class="event__body"><strong>Speech and Prize Giving Day</strong><small>Friday, 9:00 am, Main campus</small></span>
+        <span class="event__when" data-when></span>
+      </li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap forms-2">
+    <form class="form" id="absence" data-form="Absence report" novalidate data-reveal="left">
+      <h2><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#clipboard-list"/></svg> Report an absence</h2>
+      <p class="small">Please tell us by 9:00 am on the day your child will be away.</p>
+      <div class="field"><label for="ab-child">Child’s name and class</label><input id="ab-child" name="Child and class" required></div>
+      <div class="field-row">
+        <div class="field"><label for="ab-date">Date of absence</label><input id="ab-date" name="Date" type="date" required></div>
+        <div class="field"><label for="ab-reason">Reason</label><select id="ab-reason" name="Reason"><option>Illness or medical</option><option>Family emergency</option><option>Travel</option><option>Other</option></select></div>
       </div>
-    </header>
+      <div class="field"><label for="ab-parent">Your name</label><input id="ab-parent" name="Parent" autocomplete="name" required></div>
+      <div class="field"><label for="ab-note">Details <span class="optional">(optional)</span></label><textarea id="ab-note" name="Details" rows="2"></textarea></div>
+      <p class="form__error" data-error role="alert" hidden></p>
+        <button class="btn btn--primary btn--wide" type="submit"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#message-circle"/></svg><span>Send on WhatsApp</span></button>
+        <p class="form__note">WhatsApp opens with your message written out. Press send to deliver it to the school office.</p>
+    </form>
+    <form class="form" id="feedback" data-form="Parent feedback" novalidate data-reveal="right">
+      <h2><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#message-circle"/></svg> Feedback or a concern</h2>
+      <p class="small">Messages go to the school office and are handled by the administration.</p>
+      <div class="field"><label for="fb-name">Your name</label><input id="fb-name" name="Name" autocomplete="name" required></div>
+      <div class="field"><label for="fb-cat">About</label><select id="fb-cat" name="About"><option>Learning and teaching</option><option>A member of staff</option><option>Facilities</option><option>Bullying or behaviour</option><option>A suggestion</option></select></div>
+      <div class="field"><label for="fb-msg">Your message</label><textarea id="fb-msg" name="Message" rows="4" required></textarea></div>
+      <p class="form__error" data-error role="alert" hidden></p>
+        <button class="btn btn--primary btn--wide" type="submit"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#message-circle"/></svg><span>Send on WhatsApp</span></button>
+        <p class="form__note">WhatsApp opens with your message written out. Press send to deliver it to the school office.</p>
+    </form>
+  </div>
+</section>
 
-    <main>
-      <!-- ========== INNER HERO ========== -->
-      <section class="inner-hero">
-        <div class="inner-hero__bg"></div>
-        <div class="inner-hero__overlay"></div>
-        <div class="container inner-hero__content">
-          <div class="inner-hero__breadcrumb animate-fade-up"><a href="index.html">Home</a> &nbsp;/&nbsp; Discover</div>
-          <h1 class="inner-hero__title animate-fade-up delay-1">Parent Portal</h1>
-          <p class="inner-hero__subtitle animate-fade-up delay-2">
-            Your direct line to school announcements, absence reporting, and administrative communication.
-          </p>
-        </div>
-      </section>
+</main>
 
-      <!-- ========== PORTAL DASHBOARD ========== -->
-      <section class="portal-section">
-        <div class="container">
-          <div class="dash-header reveal delay-1">
-            <div class="dash-header__user">
-              <h2>Parent & Guardian Board</h2>
-              <p>Greenfield Academy Communications Dashboard • Term 2</p>
-            </div>
-          </div>
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__about">
+      <a class="brand brand--footer" href="index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="currentColor"/><path d="M8 17.5 20 12l12 5.5-12 5.5L8 17.5Z" fill="var(--accent)"/><path d="M13 20.2v5.3c0 1.6 3.1 3.3 7 3.3s7-1.7 7-3.3v-5.3l-7 3.2-7-3.2Z" fill="#fff"/><path d="M31 18v6.5" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/></svg><span><strong>Greenfield Academy</strong><small>Nurturing Minds, Building Futures</small></span></a>
+      <p>A Creche to Junior High School in Accra where every child is known, challenged and cared for, following the national curriculum from the first day of school to the BECE.</p>
+    </div>
+    <div><h3>School</h3><a href="about.html">About</a><a href="curriculum.html">Academics</a><a href="admission.html">Admissions</a><a href="school-fee.html">Fees</a></div>
+    <div><h3>Families</h3><a href="schoolcalendar.html">Calendar</a><a href="gallery.html">Gallery</a><a href="parent-portal.html">Parents</a><a href="contact.html">Contact</a><a href="assets/calendar.ics" download>Term dates for your phone</a></div>
+    <div><h3>Visit us</h3><p>12 Example Road, Accra</p><p><a href="tel:0300000000">030 000 0000</a></p><p><a href="mailto:office@example.com">office@example.com</a></p><p>Monday to Friday, 7:30 am to 4:00 pm</p></div>
+  </div>
+  <div class="wrap footer__base"><span>© <span data-year>2026</span> Greenfield Academy</span><a href="gallery.html#credits">Photo credits</a></div>
+</footer>
 
-          <div class="dash-grid">
-            <!-- School News Card -->
-            <div class="bento-card card-news reveal delay-2">
-              <div class="bento-header">
-                <h3><i class="fas fa-newspaper"></i> School Notices</h3>
-              </div>
-              <div class="scrollable-list" id="news-list-container">
-                <!-- JS Injected News Items -->
-              </div>
-            </div>
+<nav class="dock" aria-label="Quick contact">
+  <a href="tel:0300000000"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg><span>Call</span></a>
+  <a href="https://wa.me/233200000000?text=Hello%20Greenfield%20Academy%2C%20" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#message-circle"/></svg><span>WhatsApp</span></a>
+  <a class="dock__main" href="admission.html#apply"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#send"/></svg><span>Apply</span></a>
+</nav>
 
-            <!-- Disciplinary Board Card -->
-            <div class="bento-card card-discipline reveal delay-3">
-              <div class="bento-header">
-                <h3><i class="fas fa-gavel"></i> Disciplinary Board</h3>
-              </div>
-              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem">
-                Recent suspensions and disciplinary actions across the academy.
-              </p>
-              <div class="scrollable-list" id="discipline-list-container">
-                <!-- JS Injected Discipline Items -->
-              </div>
-            </div>
-
-            <!-- Submit Absence / Excuse Card -->
-            <div class="bento-card card-absence dark reveal delay-1">
-              <div class="bento-header">
-                <h3><i class="fas fa-notes-medical"></i> Report Absence / Excuse</h3>
-              </div>
-              <p style="font-size: 0.85rem; color: rgba(255, 255, 255, 0.7); margin-bottom: 1.5rem">
-                Notify the school of a student's absence due to health or family reasons.
-              </p>
-
-              <form id="absence-form" class="login-form">
-                <div class="form-group">
-                  <label for="abs-student">Student Name & Class</label>
-                  <input type="text" id="abs-student" placeholder="e.g. Kwame Mensah, JHS 1" required />
-                </div>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem">
-                  <div class="form-group">
-                    <label for="abs-date">Date of Absence</label>
-                    <input type="date" id="abs-date" required />
-                  </div>
-                  <div class="form-group">
-                    <label for="abs-reason">Reason</label>
-                    <select id="abs-reason" required>
-                      <option value="" disabled selected>Select...</option>
-                      <option value="Health">Health / Medical</option>
-                      <option value="Family">Family Emergency</option>
-                      <option value="Travel">Travel</option>
-                      <option value="Other">Other</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="abs-desc">Additional Details</label>
-                  <textarea id="abs-desc" rows="2" placeholder="Briefly explain..." required></textarea>
-                </div>
-                <button type="submit" class="btn btn--accent full-width">Submit Excuse</button>
-              </form>
-              <div id="absence-success" class="form-success-msg hidden">
-                <i class="fas fa-check-circle"></i>
-                <h4>Excuse Submitted</h4>
-                <p style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.7)">The administration has been notified.</p>
-              </div>
-            </div>
-
-            <!-- Complaints / Feedback Card -->
-            <div class="bento-card card-complaint reveal delay-2">
-              <div class="bento-header">
-                <h3><i class="fas fa-comment-dots"></i> Submit Feedback / Complaint</h3>
-              </div>
-              <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.5rem">
-                Send a direct, secure message to the school administration.
-              </p>
-
-              <form id="complaint-form" class="login-form">
-                <div class="form-group">
-                  <label for="comp-parent">Your Name (Optional)</label>
-                  <input type="text" id="comp-parent" placeholder="e.g. Mrs. Osei" />
-                </div>
-                <div class="form-group">
-                  <label for="comp-category">Category</label>
-                  <select id="comp-category" required>
-                    <option value="" disabled selected>Select category...</option>
-                    <option value="Academics">Academic Concern</option>
-                    <option value="Staff">Staff / Teacher Feedback</option>
-                    <option value="Facilities">Facilities / Infrastructure</option>
-                    <option value="Bullying">Bullying / Discipline</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="comp-desc">Message Details</label>
-                  <textarea id="comp-desc" rows="4" placeholder="Please provide details..." required></textarea>
-                </div>
-                <button type="submit" class="btn btn--primary full-width">Send to Administration</button>
-              </form>
-              <div id="complaint-success" class="form-success-msg hidden">
-                <i class="fas fa-check-circle"></i>
-                <h4>Feedback Received</h4>
-                <p style="font-size: 0.9rem; color: var(--text-muted)">Thank you. We will review this shortly.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- ========== FOOTER ========== -->
-    <footer class="footer" role="contentinfo">
-      <div class="container footer__grid">
-        <div class="footer__brand">
-          <div class="logo logo--white">
-            <div class="logo__icon" aria-hidden="true">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="logo__text">
-              <span class="logo__name">Greenfield Academy</span>
-              <span class="logo__tagline">Est. 1994</span>
-            </div>
-          </div>
-          <p>
-            Shaping the leaders of tomorrow through quality education, strong values, and a nurturing community
-            environment.
-          </p>
-        </div>
-        <div class="footer__links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#programs">Academic Programs</a></li>
-            <li><a href="#admissions">Admissions</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__links">
-          <h4>School Resources</h4>
-          <ul>
-            <li><a href="schoolcalendar.html">School Calendar</a></li>
-            <li><a href="school-fee.html">School Fees</a></li>
-            <li><a href="parent-portal.html">Parent Portal</a></li>
-          </ul>
-        </div>
-        <address class="footer__contact" style="font-style: normal">
-          <h4>Contact Info</h4>
-          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> School Road, Community 5, Accra</p>
-          <p><i class="fas fa-phone" aria-hidden="true"></i> +233 24 000 0000</p>
-          <p>
-            <i class="fas fa-envelope" aria-hidden="true"></i>
-            info@greenfield.edu.gh
-          </p>
-        </address>
-      </div>
-      <div class="footer__bottom">
-        <p>
-          &copy; 2026 Greenfield Academy. All Rights Reserved.
-          <button
-            type="button"
-            id="admin-trigger"
-            class="admin-trigger-btn"
-            aria-label="Admin Login"
-            title="Admin Login">
-            <i class="fas fa-lock"></i>
-          </button>
-        </p>
-        <p>Built with ❤️ for our community</p>
-      </div>
-    </footer>
-      <!-- Back to top -->
-    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
-      <i class="fas fa-chevron-up" aria-hidden="true"></i>
-    </button>
-
-    <script>
-      /* =============================================
-       GREENFIELD ACADEMY — Object-Oriented JS Framework
-       ============================================= */
-
-      class NewsItem {
-        constructor(title, date, category, desc) {
-          this.title = title;
-          this.date = date;
-          this.category = category;
-          this.desc = desc;
-        }
-      }
-
-      class Suspension {
-        constructor(studentName, studentImage, reason, duration, date) {
-          this.studentName = studentName;
-          this.studentImage = studentImage;
-          this.reason = reason;
-          this.duration = duration;
-          this.date = date;
-        }
-      }
-
-      class DashboardDataController {
-        static init() {
-          this.renderNews();
-          this.renderSuspensions();
-        }
-
-        static renderNews() {
-          const container = document.getElementById("news-list-container");
-          if (!container) return;
-
-          const newsList = [
-            new NewsItem(
-              "Mid-Term Break Commences",
-              "Oct 15, 2026",
-              "Academic",
-              "Please be informed that the mid-term break starts this Friday. Students are expected back on Wednesday next week.",
-            ),
-            new NewsItem(
-              "PTA General Meeting",
-              "Oct 10, 2026",
-              "Event",
-              "A reminder for all parents regarding the upcoming PTA meeting in the main hall at 10:00 AM sharp.",
-            ),
-            new NewsItem(
-              "New Bus Routes Added",
-              "Oct 02, 2026",
-              "Admin",
-              "We have added two new bus routes covering the Eastern ridge. Please check the transport portal for schedules.",
-            ),
-            new NewsItem(
-              "Science Fair Winners",
-              "Sep 28, 2026",
-              "Achievement",
-              "Congratulations to the JHS 2 class for winning the regional science fair with their water purification project.",
-            ),
-          ];
-
-          container.innerHTML = newsList
-            .map(
-              (item) => `
-            <div class="list-item">
-              <div class="item-meta">
-                <span>${item.category}</span>
-                <span>${item.date}</span>
-              </div>
-              <h4 class="item-title">${item.title}</h4>
-              <p class="item-desc">${item.desc}</p>
-            </div>
-          `,
-            )
-            .join("");
-        }
-
-        static renderSuspensions() {
-          const container = document.getElementById("discipline-list-container");
-          if (!container) return;
-
-          const suspensions = [
-            new Suspension(
-              "Michael Addo",
-              "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
-              "Physical Altercation",
-              "2 Weeks",
-              "Oct 12, 2026",
-            ),
-            new Suspension(
-              "Sarah Osei",
-              "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
-              "Vandalism of School Property",
-              "1 Week",
-              "Oct 05, 2026",
-            ),
-            new Suspension(
-              "David Mensah",
-              "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=150&q=80",
-              "Repeated Insubordination",
-              "3 Days",
-              "Sep 20, 2026",
-            ),
-          ];
-
-          container.innerHTML = suspensions
-            .map(
-              (sus) => `
-            <div class="list-item danger-item" style="display: flex; gap: 1.25rem; align-items: center;">
-              <img src="${sus.studentImage}" alt="${sus.studentName}" style="width: 80px; height: 80px; border-radius: 50%; object-fit: cover; border: 3px solid var(--danger-light); box-shadow: var(--shadow-sm); flex-shrink: 0;">
-              <div style="flex: 1;">
-                <div class="item-meta" style="color: var(--danger); margin-bottom: 0.3rem;">
-                  <span>Suspension: ${sus.duration}</span>
-                  <span>${sus.date}</span>
-                </div>
-                <h4 class="item-title" style="margin-bottom: 0.2rem; font-size: 1.15rem;">${sus.studentName}</h4>
-                <p class="item-desc"><strong>Offense:</strong> ${sus.reason}</p>
-              </div>
-            </div>
-          `,
-            )
-            .join("");
-        }
-      }
-
-      class PortalFormsController {
-        constructor() {
-          this.absenceForm = document.getElementById("absence-form");
-          this.complaintForm = document.getElementById("complaint-form");
-
-          if (this.absenceForm) this.absenceForm.addEventListener("submit", (e) => this.handleAbsence(e));
-          if (this.complaintForm) this.complaintForm.addEventListener("submit", (e) => this.handleComplaint(e));
-        }
-
-        handleAbsence(e) {
-          e.preventDefault();
-          const student = document.getElementById("abs-student").value;
-          const date = document.getElementById("abs-date").value;
-          const reason = document.getElementById("abs-reason").value;
-          const desc = document.getElementById("abs-desc").value;
-
-          const emailTo = "absences@greenfield.edu.gh";
-          const subject = encodeURIComponent(`Absence Excuse: ${student}`);
-          const body = encodeURIComponent(
-            `Student Name: ${student}\nDate of Absence: ${date}\nReason: ${reason}\n\nAdditional Details:\n${desc}`,
-          );
-          window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
-
-          this.absenceForm.classList.add("hidden");
-          document.getElementById("absence-success").classList.remove("hidden");
-
-          setTimeout(() => {
-            document.getElementById("absence-success").classList.add("hidden");
-            this.absenceForm.reset();
-            this.absenceForm.classList.remove("hidden");
-          }, 5000);
-        }
-
-        handleComplaint(e) {
-          e.preventDefault();
-          const parentNameInput = document.getElementById("comp-parent").value;
-          const parent = parentNameInput.trim() !== "" ? parentNameInput : "Anonymous Parent";
-          const category = document.getElementById("comp-category").value;
-          const desc = document.getElementById("comp-desc").value;
-
-          const emailTo = "admin@greenfield.edu.gh";
-          const subject = encodeURIComponent(`Parent Feedback/Complaint: ${category}`);
-          const body = encodeURIComponent(
-            `Submitted By: ${parent}\nCategory: ${category}\n\nMessage Details:\n${desc}`,
-          );
-          window.location.href = `mailto:${emailTo}?subject=${subject}&body=${body}`;
-
-          const record = {
-            id: "GF-PRT-" + Date.now().toString().slice(-4),
-            date: new Date().toLocaleString(),
-            parent: parent,
-            student: "N/A",
-            phone: "N/A",
-            category: category,
-            message: desc,
-            status: "Pending",
-          };
-
-          let logs = JSON.parse(localStorage.getItem("greenfield_complaints")) || [];
-          logs.unshift(record);
-          localStorage.setItem("greenfield_complaints", JSON.stringify(logs));
-
-          this.complaintForm.classList.add("hidden");
-          document.getElementById("complaint-success").classList.remove("hidden");
-
-          setTimeout(() => {
-            document.getElementById("complaint-success").classList.add("hidden");
-            this.complaintForm.reset();
-            this.complaintForm.classList.remove("hidden");
-          }, 5000);
-        }
-      }
-
-      class Navigation {
-        constructor() {
-          this.header = document.getElementById("header");
-          this.hamburger = document.getElementById("hamburger");
-          this.nav = document.getElementById("nav");
-          this.bindEvents();
-        }
-        bindEvents() {
-          window.addEventListener("scroll", () => {
-            if (window.scrollY > 50) this.header.classList.add("scrolled");
-            else this.header.classList.remove("scrolled");
-          });
-          if (this.hamburger) {
-            this.hamburger.addEventListener("click", () => {
-              const isOpen = this.hamburger.classList.contains("open");
-              this.hamburger.classList.toggle("open");
-              this.nav.classList.toggle("open");
-              this.header.classList.toggle("menu-open");
-              document.body.style.overflow = this.nav.classList.contains("open") ? "hidden" : "";
-            });
-          }
-        }
-      }
-
-      class ScrollAnimation {
-        constructor() {
-          this.elements = document.querySelectorAll(".reveal");
-          this.observer = new IntersectionObserver(
-            (entries, observer) => {
-              entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                  entry.target.classList.add("visible");
-                  observer.unobserve(entry.target);
-                }
-              });
-            },
-            { threshold: 0.1 },
-          );
-          this.init();
-        }
-        init() {
-          this.elements.forEach((el) => this.observer.observe(el));
-        }
-      }
-
-      document.addEventListener("DOMContentLoaded", () => {
-        DashboardDataController.init();
-        new PortalFormsController();
-        new Navigation();
-        new ScrollAnimation();
-      });
-    </script>
-  </body>
+<button class="to-top" type="button" aria-label="Back to top"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up"/></svg></button>
+<script type="application/json" id="school-data">{"name":"Greenfield Academy","whatsapp":"233200000000","email":"office@example.com","currency":"GH₵","terms":[{"name":"Term 1","starts":"2026-09-08","ends":"2026-12-18"},{"name":"Term 2","starts":"2027-01-12","ends":"2027-04-01"},{"name":"Term 3","starts":"2027-04-27","ends":"2027-07-23"}],"events":[{"date":"2026-09-08","title":"School reopens for Term 1"},{"date":"2026-10-14","title":"PTA general meeting"},{"date":"2026-11-05","title":"Mid-term assessments begin"},{"date":"2026-12-04","title":"Science and Innovation Fair"},{"date":"2026-12-18","title":"End of Term 1 and Carols Service"},{"date":"2027-01-12","title":"School reopens for Term 2"},{"date":"2027-02-19","title":"Inter-House Sports Festival"},{"date":"2027-03-06","title":"Independence Day (no school)"},{"date":"2027-03-25","title":"End of term examinations"},{"date":"2027-04-27","title":"School reopens for Term 3"},{"date":"2027-05-21","title":"Cultural Day"},{"date":"2027-07-23","title":"Speech and Prize Giving Day"}],"plans":[{"level":"Early years","perTerm":2500},{"level":"Primary","perTerm":3200},{"level":"Junior High","perTerm":4000}],"discounts":[5,10,15]}</script>
+<script type="module" src="assets/js/site.js"></script>
+</body>
 </html>

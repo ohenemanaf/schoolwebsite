@@ -1,556 +1,142 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="View the Greenfield Academy photo gallery and meet our dedicated teaching staff and administration." />
-    <title>Gallery & Staff | Greenfield Academy</title>
-    <link rel="stylesheet" href="CSS/galery.css" />
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gallery | Greenfield Academy</title>
+<meta name="description" content="Photos of school life at Greenfield Academy.">
+<meta name="theme-color" content="#0e4a37">
+<meta property="og:title" content="Gallery | Greenfield Academy">
+<meta property="og:description" content="Photos of school life at Greenfield Academy.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://ohenemanaf.github.io/schoolwebsite/assets/photos/hero.webp">
+<link rel="canonical" href="https://ohenemanaf.github.io/schoolwebsite/gallery.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2040%2040%22%20aria-hidden%3D%22true%22%3E%3Crect%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%2211%22%20fill%3D%22%230e4a37%22%2F%3E%3Cpath%20d%3D%22M8%2017.5%2020%2012l12%205.5-12%205.5L8%2017.5Z%22%20fill%3D%22%23f2b33d%22%2F%3E%3Cpath%20d%3D%22M13%2020.2v5.3c0%201.6%203.1%203.3%207%203.3s7-1.7%207-3.3v-5.3l-7%203.2-7-3.2Z%22%20fill%3D%22%23fff%22%2F%3E%3Cpath%20d%3D%22M31%2018v6.5%22%20stroke%3D%22%23f2b33d%22%20stroke-width%3D%221.8%22%20stroke-linecap%3D%22round%22%2F%3E%3C%2Fsvg%3E">
+<link rel="preload" href="assets/fonts/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jakarta.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>:root { --brand: #0e4a37; --accent: #f2b33d; }</style>
+<script>document.documentElement.classList.add('js')</script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  </head>
-  <body>
-    <!-- ========== HEADER / NAVBAR ========== -->
-    <header class="header" id="header" role="banner">
-      <div class="container header__inner">
-        <a href="index.html" class="logo">
-          <div class="logo__icon" aria-hidden="true">
-            <i class="fas fa-graduation-cap"></i>
-          </div>
-          <div class="logo__text">
-            <span class="logo__name">Greenfield Academy</span>
-            <span class="logo__tagline">Est. 1994</span>
-          </div>
-        </a>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<p class="demo-note"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#info"/></svg><span>Demo school: the name, people, numbers and dates on this site are samples.</span></p>
+<header class="header" data-header>
+  <div class="wrap header__row">
+    <a class="brand" href="index.html" aria-label="Greenfield Academy, home"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="currentColor"/><path d="M8 17.5 20 12l12 5.5-12 5.5L8 17.5Z" fill="var(--accent)"/><path d="M13 20.2v5.3c0 1.6 3.1 3.3 7 3.3s7-1.7 7-3.3v-5.3l-7 3.2-7-3.2Z" fill="#fff"/><path d="M31 18v6.5" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/></svg><span><strong>Greenfield Academy</strong><small>Est. 1994</small></span></a>
+    <nav class="nav" aria-label="Main"><a href="about.html">About</a><a href="curriculum.html">Academics</a><a href="admission.html">Admissions</a><a href="school-fee.html">Fees</a><a href="schoolcalendar.html">Calendar</a><a href="gallery.html" aria-current="page">Gallery</a><a href="parent-portal.html">Parents</a><a href="contact.html">Contact</a></nav>
+    <a class="btn btn--accent header__cta" href="admission.html#apply">Apply now</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="menu" id="menu" hidden>
+  <nav aria-label="Menu">
+    <a href="index.html">Home</a>
+    <a href="about.html" style="--i:1">About</a>
+    <a href="curriculum.html" style="--i:2">Academics</a>
+    <a href="admission.html" style="--i:3">Admissions</a>
+    <a href="school-fee.html" style="--i:4">Fees</a>
+    <a href="schoolcalendar.html" style="--i:5">Calendar</a>
+    <a href="gallery.html" style="--i:6" aria-current="page">Gallery</a>
+    <a href="parent-portal.html" style="--i:7">Parents</a>
+    <a href="contact.html" style="--i:8">Contact</a>
+  </nav>
+  <div class="menu__foot">
+    <a class="btn btn--accent btn--wide" href="admission.html#apply"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#send"/></svg><span>Apply now</span></a>
+    <a class="btn btn--glass btn--wide" href="tel:0300000000"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg><span>030 000 0000</span></a>
+  </div>
+</div>
 
-        <nav class="nav" id="nav" role="navigation" aria-label="Main Navigation">
-          <ul class="nav__list">
-            <li><a href="index.html" class="nav__link">Home</a></li>
-            <li><a href="about.html" class="nav__link">About Us</a></li>
-            <li><a href="curriculum.html" class="nav__link">Curriculum</a></li>
-            <li><a href="admission.html" class="nav__link">Admissions</a></li>
-            <li class="nav__item--dropdown">
-              <a href="#" class="nav__link active" aria-haspopup="true" aria-expanded="false"
-                >Discover <i class="fas fa-chevron-down" style="font-size: 0.7rem; margin-left: 4px"></i
-              ></a>
-              <ul class="dropdown-menu">
-                <li><a href="schoolcalendar.html" class="dropdown-link">School Calendar</a></li>
-                <li><a href="school-fee.html" class="dropdown-link">Tuition & Fees</a></li>
-                <li><a href="parent-portal.html" class="dropdown-link">Parent Portal</a></li>
-                <li><a href="index.html#events" class="dropdown-link">News & Events</a></li>
-                <li><a href="gallery.html" class="dropdown-link">Gallery</a></li>
-                <li><a href="#staff" class="dropdown-link">Our Staff</a></li>
-              </ul>
-            </li>
-            <li><a href="index.html#contact" class="nav__link">Contact</a></li>
-          </ul>
-          <a href="admission.html" class="btn btn--accent nav__cta">Enroll Now</a>
-        </nav>
+<main id="main">
 
-        <button
-          type="button"
-          class="hamburger"
-          id="hamburger"
-          aria-expanded="false"
-          aria-label="Toggle navigation menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </header>
+<section class="page-hero">
+  <div class="wrap page-hero__grid">
+    <div>
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chevron-right"/></svg><span aria-current="page">Gallery</span></nav>
+      <h1 data-split>Gallery</h1>
+      <p>Lessons, celebrations, sport and friendships: a look at everyday school life.</p>
+    </div>
+    <div class="page-hero__art" aria-hidden="true"><img class="ph ph--a" src="assets/photos/cultural-day.webp" alt="" loading="lazy" decoding="async"><img class="ph ph--b" src="assets/photos/friends.webp" alt="" loading="lazy" decoding="async"><span class="ph-dot"></span></div>
+  </div>
+  <svg class="page-hero__wave" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30c240-40 480 40 720 10s480-40 720 0v20H0z"/></svg>
+</section>
 
-    <main>
-      <!-- ========== INNER HERO ========== -->
-      <section class="inner-hero">
-        <div class="inner-hero__bg"></div>
-        <div class="inner-hero__overlay"></div>
-        <div class="container inner-hero__content">
-          <div class="inner-hero__breadcrumb animate-fade-up"><a href="index.html">Home</a> &nbsp;/&nbsp; Discover</div>
-          <h1 class="inner-hero__title animate-fade-up delay-1">Gallery & Staff</h1>
-          <p class="inner-hero__subtitle animate-fade-up delay-2">
-            Explore our vibrant campus life and meet the dedicated professionals shaping the leaders of tomorrow.
-          </p>
-        </div>
-      </section>
+<section class="section">
+  <div class="wrap">
+    <div class="filters" role="group" aria-label="Show photos">
+      <button type="button" class="chip-btn is-active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="chip-btn" data-filter="school-life" aria-pressed="false">School life</button><button type="button" class="chip-btn" data-filter="learning" aria-pressed="false">Learning</button><button type="button" class="chip-btn" data-filter="culture" aria-pressed="false">Culture</button><button type="button" class="chip-btn" data-filter="events" aria-pressed="false">Events</button>
+    </div>
+    <ul class="gallery" data-gallery>
+      <li data-cat="school-life" data-reveal="zoom" style="--i:0"><button type="button" data-index="0" aria-label="Open photo: Morning assembly"><img class="" src="assets/photos/assembly.webp" alt="Morning assembly" loading="lazy" decoding="async"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#expand"/></svg>Morning assembly</span></button></li>
+      <li data-cat="learning" data-reveal="zoom" style="--i:1"><button type="button" data-index="1" aria-label="Open photo: Reading in the library"><img class="" src="assets/photos/library.webp" alt="Reading in the library" loading="lazy" decoding="async"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#expand"/></svg>Reading in the library</span></button></li>
+      <li data-cat="culture" data-reveal="zoom" style="--i:2"><button type="button" data-index="2" aria-label="Open photo: Cultural Day dancers"><img class="" src="assets/photos/cultural-day.webp" alt="Cultural Day dancers" loading="lazy" decoding="async"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#expand"/></svg>Cultural Day dancers</span></button></li>
+      <li data-cat="events" data-reveal="zoom" style="--i:3"><button type="button" data-index="3" aria-label="Open photo: Independence Day march"><img class="" src="assets/photos/independence-march.webp" alt="Independence Day march" loading="lazy" decoding="async"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#expand"/></svg>Independence Day march</span></button></li>
+      <li data-cat="events" data-reveal="zoom" style="--i:0"><button type="button" data-index="4" aria-label="Open photo: Tree planting day"><img class="" src="assets/photos/tree-planting.webp" alt="Tree planting day" loading="lazy" decoding="async"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#expand"/></svg>Tree planting day</span></button></li>
+      <li data-cat="school-life" data-reveal="zoom" style="--i:1"><button type="button" data-index="5" aria-label="Open photo: Friends at break time"><img class="" src="assets/photos/friends.webp" alt="Friends at break time" loading="lazy" decoding="async"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#expand"/></svg>Friends at break time</span></button></li>
+      <li data-cat="learning" data-reveal="zoom" style="--i:2"><button type="button" data-index="6" aria-label="Open photo: Learning with technology"><img class="" src="assets/photos/ict.webp" alt="Learning with technology" loading="lazy" decoding="async"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#expand"/></svg>Learning with technology</span></button></li>
+      <li data-cat="school-life" data-reveal="zoom" style="--i:3"><button type="button" data-index="7" aria-label="Open photo: Ready for school"><img class="" src="assets/photos/uniform.webp" alt="Ready for school" loading="lazy" decoding="async"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#expand"/></svg>Ready for school</span></button></li>
+      <li data-cat="learning" data-reveal="zoom" style="--i:0"><button type="button" data-index="8" aria-label="Open photo: Reading assessment"><img class="" src="assets/photos/reading-test.webp" alt="Reading assessment" loading="lazy" decoding="async"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#expand"/></svg>Reading assessment</span></button></li>
+      <li data-cat="school-life" data-reveal="zoom" style="--i:1"><button type="button" data-index="9" aria-label="Open photo: On the way to school"><img class="" src="assets/photos/walk-to-school.webp" alt="On the way to school" loading="lazy" decoding="async"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#expand"/></svg>On the way to school</span></button></li>
+      <li data-cat="events" data-reveal="zoom" style="--i:2"><button type="button" data-index="10" aria-label="Open photo: JHS pupils at the flag"><img class="" src="assets/photos/flag-assembly.webp" alt="JHS pupils at the flag" loading="lazy" decoding="async"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#expand"/></svg>JHS pupils at the flag</span></button></li>
+      <li data-cat="learning" data-reveal="zoom" style="--i:3"><button type="button" data-index="11" aria-label="Open photo: Class with their teacher"><img class="" src="assets/photos/students-teacher.webp" alt="Class with their teacher" loading="lazy" decoding="async"><span><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#expand"/></svg>Class with their teacher</span></button></li>
+    </ul>
+  </div>
+</section>
 
-      <!-- ========== GALLERY GRID ========== -->
-      <section class="section bg-light" id="gallery">
-        <div class="container">
-          <div class="section__header reveal">
-            <p class="section__pre">Campus Life in Pictures</p>
-            <h2 class="section__title">Our Memories</h2>
-            <div class="section__line"></div>
-            <p class="section__desc">
-              From academic milestones to thrilling sports tournaments, explore the unforgettable moments captured
-              across our vibrant campus.
-            </p>
-          </div>
+<dialog class="lightbox" data-lightbox aria-label="Photo viewer">
+  <button class="lightbox__close" type="button" data-close aria-label="Close"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#x"/></svg></button>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" data-prev aria-label="Previous photo"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chevron-left"/></svg></button>
+  <figure><img alt="" data-lb-img><figcaption data-lb-cap></figcaption></figure>
+  <button class="lightbox__nav lightbox__nav--next" type="button" data-next aria-label="Next photo"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#chevron-right"/></svg></button>
+</dialog>
+<script type="application/json" id="gallery-data">[{"src":"assets/photos/assembly.webp","caption":"Morning assembly"},{"src":"assets/photos/library.webp","caption":"Reading in the library"},{"src":"assets/photos/cultural-day.webp","caption":"Cultural Day dancers"},{"src":"assets/photos/independence-march.webp","caption":"Independence Day march"},{"src":"assets/photos/tree-planting.webp","caption":"Tree planting day"},{"src":"assets/photos/friends.webp","caption":"Friends at break time"},{"src":"assets/photos/ict.webp","caption":"Learning with technology"},{"src":"assets/photos/uniform.webp","caption":"Ready for school"},{"src":"assets/photos/reading-test.webp","caption":"Reading assessment"},{"src":"assets/photos/walk-to-school.webp","caption":"On the way to school"},{"src":"assets/photos/flag-assembly.webp","caption":"JHS pupils at the flag"},{"src":"assets/photos/students-teacher.webp","caption":"Class with their teacher"}]</script>
 
-          <div class="gallery__filter reveal delay-1" role="group" aria-label="Gallery filters">
-            <button type="button" class="filter-btn active" data-filter="all">All Photos</button>
-            <button type="button" class="filter-btn" data-filter="academic">Academic</button>
-            <button type="button" class="filter-btn" data-filter="sports">Sports</button>
-            <button type="button" class="filter-btn" data-filter="events">Events & Activities</button>
-            <button type="button" class="filter-btn" data-filter="culture">Culture</button>
-          </div>
+<section class="section section--paper" id="credits">
+  <div class="wrap">
+    <div class="head " data-reveal>
+      <p class="kicker">Photo credits</p>
+      <h2>Thank you to the photographers</h2><svg class="rule" viewBox="0 0 120 10" aria-hidden="true" preserveAspectRatio="none"><path d="M2 6c18-5 38-5 58 0s40 4 58-1" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/></svg>
+      <p class="head__text">The photos on this demo site are freely licensed images of schools in Ghana, from Wikimedia Commons.</p>
+    </div>
+    <ul class="credits">
+      <li><strong>Ghana school under the trees</strong><span>A. Kauffeld, USAID</span><em>Public domain</em></li>
+      <li><strong>Ghana students</strong><span>Henry Akorsu, USAID</span><em>Public domain</em></li>
+      <li><strong>A&amp;B Schools Cluster, Accra</strong><span>USAID</span><em>Public domain</em></li>
+      <li><strong>Ghana children</strong><span>USAID Africa Bureau</span><em>Public domain</em></li>
+      <li><strong>Pupils in Ghana</strong><span>Bright Kwame Ayisi</span><em>CC0</em></li>
+      <li><strong>Ghana Junior High School students, Winneba</strong><span>OER Africa</span><em>CC BY 2.0</em></li>
+      <li><strong>Ghana 54th</strong><span>Ben Sutherland</span><em>CC BY 2.0</em></li>
+      <li><strong>Ghana class during school reading tests</strong><span>Charlie from United Kingdom</span><em>CC BY 2.0</em></li>
+    </ul>
+  </div>
+</section>
 
-          <!-- JS Inject: Gallery Container -->
-          <div class="gallery__grid" id="gallery-container"></div>
-        </div>
-      </section>
+</main>
 
-      <!-- ========== STAFF GRID ========== -->
-      <section class="section" id="staff">
-        <div class="container">
-          <div class="section__header reveal">
-            <p class="section__pre">Meet the Team</p>
-            <h2 class="section__title">Our Dedicated Staff</h2>
-            <div class="section__line"></div>
-            <p class="section__desc">
-              A team of highly qualified, passionate educators committed to nurturing the potential of every single
-              student.
-            </p>
-          </div>
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div class="footer__about">
+      <a class="brand brand--footer" href="index.html"><svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="currentColor"/><path d="M8 17.5 20 12l12 5.5-12 5.5L8 17.5Z" fill="var(--accent)"/><path d="M13 20.2v5.3c0 1.6 3.1 3.3 7 3.3s7-1.7 7-3.3v-5.3l-7 3.2-7-3.2Z" fill="#fff"/><path d="M31 18v6.5" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/></svg><span><strong>Greenfield Academy</strong><small>Nurturing Minds, Building Futures</small></span></a>
+      <p>A Creche to Junior High School in Accra where every child is known, challenged and cared for, following the national curriculum from the first day of school to the BECE.</p>
+    </div>
+    <div><h3>School</h3><a href="about.html">About</a><a href="curriculum.html">Academics</a><a href="admission.html">Admissions</a><a href="school-fee.html">Fees</a></div>
+    <div><h3>Families</h3><a href="schoolcalendar.html">Calendar</a><a href="gallery.html">Gallery</a><a href="parent-portal.html">Parents</a><a href="contact.html">Contact</a><a href="assets/calendar.ics" download>Term dates for your phone</a></div>
+    <div><h3>Visit us</h3><p>12 Example Road, Accra</p><p><a href="tel:0300000000">030 000 0000</a></p><p><a href="mailto:office@example.com">office@example.com</a></p><p>Monday to Friday, 7:30 am to 4:00 pm</p></div>
+  </div>
+  <div class="wrap footer__base"><span>© <span data-year>2026</span> Greenfield Academy</span><a href="gallery.html#credits">Photo credits</a></div>
+</footer>
 
-          <!-- JS Inject: Staff Container -->
-          <div class="staff__grid" id="staff-container"></div>
-        </div>
-      </section>
-    </main>
+<nav class="dock" aria-label="Quick contact">
+  <a href="tel:0300000000"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#phone"/></svg><span>Call</span></a>
+  <a href="https://wa.me/233200000000?text=Hello%20Greenfield%20Academy%2C%20" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#message-circle"/></svg><span>WhatsApp</span></a>
+  <a class="dock__main" href="admission.html#apply"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#send"/></svg><span>Apply</span></a>
+</nav>
 
-    <!-- ========== FOOTER ========== -->
-    <footer class="footer" role="contentinfo">
-      <div class="container footer__grid">
-        <div class="footer__brand">
-          <div class="logo logo--white" style="margin-bottom: 1rem">
-            <div class="logo__icon" aria-hidden="true">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="logo__text">
-              <span class="logo__name" style="font-size: 1.4rem">Greenfield Academy</span>
-            </div>
-          </div>
-          <p>
-            Shaping the leaders of tomorrow through quality education, strong values, and a nurturing community
-            environment.
-          </p>
-        </div>
-        <div class="footer__links">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="curriculum.html">Curriculum</a></li>
-            <li><a href="admission.html">Admissions</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__links">
-          <h4>School Resources</h4>
-          <ul>
-            <li><a href="schoolcalendar.html">School Calendar</a></li>
-            <li><a href="school-fee.html">Tuition & Fees</a></li>
-            <li><a href="parent-portal.html">Parent Portal</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-          </ul>
-        </div>
-        <address class="footer__contact" style="font-style: normal">
-          <h4>Contact Info</h4>
-          <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> School Road, Community 5, Accra</p>
-          <p><i class="fas fa-phone" aria-hidden="true"></i> +233 24 000 0000</p>
-          <p>
-            <i class="fas fa-envelope" aria-hidden="true"></i>
-            info@greenfield.edu.gh
-          </p>
-        </address>
-      </div>
-      <div class="container">
-        <div class="footer__bottom">
-          <p>
-            &copy; 2026 Greenfield Academy. All Rights Reserved.
-            <button
-              type="button"
-              class="admin-trigger-btn"
-              aria-label="Admin Login"
-              title="Admin Login"
-              onclick="alert('Admin Dashboard Access Requires Secure Login.')">
-              <i class="fas fa-lock"></i>
-            </button>
-          </p>
-          <p>Built with ❤️ for our community</p>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Back to top -->
-    <button type="button" class="back-to-top" id="back-to-top" aria-label="Back to top">
-      <i class="fas fa-chevron-up" aria-hidden="true"></i>
-    </button>
-
-    <script>
-      /* =============================================
-       GREENFIELD ACADEMY — Object-Oriented JS Framework
-       ============================================= */
-
-      /**
-       * Model: Represents a single Gallery Image
-       */
-      class GalleryItem {
-        constructor(category, imgUrl, caption, delayClass) {
-          this.category = category;
-          this.imgUrl = imgUrl;
-          this.caption = caption;
-          this.delayClass = delayClass;
-        }
-      }
-
-      /**
-       * Model: Represents a Staff Member
-       */
-      class StaffMember {
-        constructor(name, role, quals, imgUrl, delayClass) {
-          this.name = name;
-          this.role = role;
-          this.quals = quals;
-          this.imgUrl = imgUrl;
-          this.delayClass = delayClass;
-        }
-      }
-
-      /**
-       * Controller: Manages Data Injection and Filtering for the Gallery
-       */
-      class GalleryController {
-        static init() {
-          this.container = document.getElementById("gallery-container");
-          this.filterBtns = document.querySelectorAll(".filter-btn");
-          if (!this.container) return;
-
-          // Data Object mapping
-          this.items = [
-            new GalleryItem(
-              "academic",
-              "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=600&q=80",
-              "Classroom Learning",
-              "",
-            ),
-            new GalleryItem(
-              "sports",
-              "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=600&q=80",
-              "Athletics Day",
-              "delay-1",
-            ),
-            new GalleryItem(
-              "events",
-              "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=600&q=80",
-              "Annual Prize Giving",
-              "delay-2",
-            ),
-            new GalleryItem(
-              "culture",
-              "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=600&q=80",
-              "Cultural Festival",
-              "delay-3",
-            ),
-            new GalleryItem(
-              "academic",
-              "https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80",
-              "Science Lab Practicals",
-              "",
-            ),
-            new GalleryItem(
-              "sports",
-              "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?auto=format&fit=crop&w=600&q=80",
-              "Inter-Schools Football",
-              "delay-1",
-            ),
-            new GalleryItem(
-              "events",
-              "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80",
-              "Staff Development Workshop",
-              "delay-2",
-            ),
-            new GalleryItem(
-              "culture",
-              "https://images.unsplash.com/photo-1543807535-eceef0bc6599?auto=format&fit=crop&w=600&q=80",
-              "Creative Arts Exhibition",
-              "delay-3",
-            ),
-            new GalleryItem(
-              "academic",
-              "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=600&q=80",
-              "Library Research",
-              "",
-            ),
-            new GalleryItem(
-              "events",
-              "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=600&q=80",
-              "Community Outreach",
-              "delay-1",
-            ),
-            new GalleryItem(
-              "sports",
-              "https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&w=600&q=80",
-              "Basketball Tournament",
-              "delay-2",
-            ),
-            new GalleryItem(
-              "culture",
-              "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=600&q=80",
-              "Music & Choir Performance",
-              "delay-3",
-            ),
-          ];
-
-          this.renderAll();
-          this.bindEvents();
-        }
-
-        static renderAll() {
-          this.container.innerHTML = this.items
-            .map(
-              (item) => `
-            <div class="gallery-item reveal ${item.delayClass}" data-cat="${item.category}">
-              <img src="${item.imgUrl}" alt="${item.caption}" class="img-cover" loading="lazy">
-              <div class="gallery-item__caption">${item.caption}</div>
-            </div>
-          `,
-            )
-            .join("");
-        }
-
-        static bindEvents() {
-          this.filterBtns.forEach((btn) => {
-            btn.addEventListener("click", (e) => {
-              // Update active button state
-              this.filterBtns.forEach((b) => b.classList.remove("active"));
-              e.target.classList.add("active");
-
-              // Filter logic
-              const filterValue = e.target.getAttribute("data-filter");
-              const domItems = this.container.querySelectorAll(".gallery-item");
-
-              domItems.forEach((item) => {
-                if (filterValue === "all" || item.getAttribute("data-cat") === filterValue) {
-                  item.classList.remove("filtered-out");
-                } else {
-                  item.classList.add("filtered-out");
-                }
-              });
-            });
-          });
-        }
-      }
-
-      /**
-       * Controller: Manages Data Injection for Staff
-       */
-      class StaffController {
-        static init() {
-          this.container = document.getElementById("staff-container");
-          if (!this.container) return;
-
-          // Object instantiation (Easy to edit/update staff here)
-          this.staffData = [
-            new StaffMember(
-              "Mr. Emmanuel Asante",
-              "Principal & Headmaster",
-              "MEd, BA (Ed)",
-              "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80",
-              "",
-            ),
-            new StaffMember(
-              "Mrs. Abena Mensah",
-              "Deputy Headmistress",
-              "BSc (Ed), PGDE",
-              "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80",
-              "delay-1",
-            ),
-            new StaffMember(
-              "Mr. Kofi Boateng",
-              "Head of Sciences",
-              "BSc Chemistry",
-              "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?auto=format&fit=crop&w=400&q=80",
-              "delay-2",
-            ),
-            new StaffMember(
-              "Miss Akua Frimpong",
-              "Head of Mathematics",
-              "BSc Math, B.Ed",
-              "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=400&q=80",
-              "delay-3",
-            ),
-            new StaffMember(
-              "Mr. Kwame Osei",
-              "Head of Humanities",
-              "BA History",
-              "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-              "",
-            ),
-            new StaffMember(
-              "Mrs. Grace Addo",
-              "Head of Languages",
-              "BA French, MEd",
-              "https://images.unsplash.com/photo-1598550880863-4e8aa3d0edb4?auto=format&fit=crop&w=400&q=80",
-              "delay-1",
-            ),
-            new StaffMember(
-              "Mr. David Tetteh",
-              "Physical Education",
-              "BSc Sports Sci.",
-              "https://images.unsplash.com/photo-1528892952291-009c663ce843?auto=format&fit=crop&w=400&q=80",
-              "delay-2",
-            ),
-            new StaffMember(
-              "Ms. Sarah Yeboah",
-              "Creative Arts",
-              "BFA Arts",
-              "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
-              "delay-3",
-            ),
-          ];
-
-          this.renderAll();
-        }
-
-        static renderAll() {
-          this.container.innerHTML = this.staffData
-            .map(
-              (staff) => `
-            <div class="staff-card reveal ${staff.delayClass}">
-              <div class="staff-card__photo-wrap">
-                <img src="${staff.imgUrl}" alt="${staff.name} Portrait" class="img-cover" loading="lazy">
-              </div>
-              <div class="staff-card__body">
-                <h4>${staff.name}</h4>
-                <p>${staff.role}</p>
-                <div class="staff-card__quals"><span>${staff.quals}</span></div>
-                <div class="staff-card__socials">
-                  <a href="mailto:info@greenfield.edu.gh" aria-label="Email ${staff.name}"><i class="fas fa-envelope"></i></a>
-                  <a href="#" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-              </div>
-            </div>
-          `,
-            )
-            .join("");
-        }
-      }
-
-      /**
-       * Core Application Logic (Nav & Animations)
-       */
-      class Navigation {
-        constructor() {
-          this.header = document.getElementById("header");
-          this.navLinks = document.querySelectorAll(".nav__link, .dropdown-link");
-          this.backToTop = document.getElementById("back-to-top");
-          this.hamburger = document.getElementById("hamburger");
-          this.nav = document.getElementById("nav");
-          this.bindEvents();
-        }
-
-        bindEvents() {
-          window.addEventListener("scroll", this.handleScroll.bind(this));
-
-          if (this.hamburger) {
-            this.hamburger.addEventListener("click", this.toggleMenu.bind(this));
-          }
-
-          this.navLinks.forEach((link) => {
-            link.addEventListener("click", (e) => this.handleLinkClick(e, link));
-          });
-
-          if (this.backToTop) {
-            this.backToTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-          }
-
-          document.addEventListener("keydown", (e) => {
-            if (e.key === "Escape" && this.nav && this.nav.classList.contains("open")) {
-              this.closeMenu();
-            }
-          });
-        }
-
-        handleScroll() {
-          if (window.scrollY > 50) this.header.classList.add("scrolled");
-          else this.header.classList.remove("scrolled");
-
-          if (window.scrollY > 400) this.backToTop.classList.add("visible");
-          else this.backToTop.classList.remove("visible");
-        }
-
-        toggleMenu() {
-          const isOpen = this.hamburger.classList.contains("open");
-          this.hamburger.classList.toggle("open");
-          this.nav.classList.toggle("open");
-          this.header.classList.toggle("menu-open");
-          this.hamburger.setAttribute("aria-expanded", String(!isOpen));
-          document.body.style.overflow = this.nav.classList.contains("open") ? "hidden" : "";
-        }
-
-        closeMenu() {
-          if (!this.hamburger) return;
-          this.hamburger.classList.remove("open");
-          this.nav.classList.remove("open");
-          this.header.classList.remove("menu-open");
-          this.hamburger.setAttribute("aria-expanded", "false");
-          document.body.style.overflow = "";
-        }
-
-        handleLinkClick(e, link) {
-          const targetId = link.getAttribute("href");
-
-          if (targetId.startsWith("#")) {
-            e.preventDefault();
-            this.closeMenu();
-            if (targetId === "#") return;
-            const target = document.querySelector(targetId);
-            if (target) {
-              const offset = 80;
-              const top = target.getBoundingClientRect().top + window.scrollY - offset;
-              window.scrollTo({ top, behavior: "smooth" });
-            }
-          } else {
-            this.closeMenu();
-          }
-        }
-      }
-
-      class ScrollAnimation {
-        constructor() {
-          this.elements = document.querySelectorAll(".reveal");
-          this.observer = new IntersectionObserver(
-            (entries, observer) => {
-              entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                  entry.target.classList.add("visible");
-                  observer.unobserve(entry.target);
-                }
-              });
-            },
-            { threshold: 0.12 },
-          );
-          this.init();
-        }
-        init() {
-          this.elements.forEach((el) => this.observer.observe(el));
-        }
-      }
-
-      // Bootstrap
-      document.addEventListener("DOMContentLoaded", () => {
-        GalleryController.init();
-        StaffController.init(); // Initialize Staff Controller
-        new Navigation();
-        new ScrollAnimation();
-      });
-    </script>
-  </body>
+<button class="to-top" type="button" aria-label="Back to top"><svg class="icon" aria-hidden="true"><use href="assets/icons.svg#arrow-up"/></svg></button>
+<script type="application/json" id="school-data">{"name":"Greenfield Academy","whatsapp":"233200000000","email":"office@example.com","currency":"GH₵","terms":[{"name":"Term 1","starts":"2026-09-08","ends":"2026-12-18"},{"name":"Term 2","starts":"2027-01-12","ends":"2027-04-01"},{"name":"Term 3","starts":"2027-04-27","ends":"2027-07-23"}],"events":[{"date":"2026-09-08","title":"School reopens for Term 1"},{"date":"2026-10-14","title":"PTA general meeting"},{"date":"2026-11-05","title":"Mid-term assessments begin"},{"date":"2026-12-04","title":"Science and Innovation Fair"},{"date":"2026-12-18","title":"End of Term 1 and Carols Service"},{"date":"2027-01-12","title":"School reopens for Term 2"},{"date":"2027-02-19","title":"Inter-House Sports Festival"},{"date":"2027-03-06","title":"Independence Day (no school)"},{"date":"2027-03-25","title":"End of term examinations"},{"date":"2027-04-27","title":"School reopens for Term 3"},{"date":"2027-05-21","title":"Cultural Day"},{"date":"2027-07-23","title":"Speech and Prize Giving Day"}],"plans":[{"level":"Early years","perTerm":2500},{"level":"Primary","perTerm":3200},{"level":"Junior High","perTerm":4000}],"discounts":[5,10,15]}</script>
+<script type="module" src="assets/js/site.js"></script>
+</body>
 </html>
